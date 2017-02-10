@@ -427,6 +427,22 @@ BEGIN COLOR SECTION
   background-size: contain;
 }
 
+.baldwin-with-match-bg{
+  background: url('./baldwinwithmatch.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #AF1201;
+}
+
+.serious-baldwin-bg{
+  background: url('./seriousbaldwin.png');
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-color: #b8d2fb;
+}
+
 .look-in-black-bg{
   background: url('./lookinblack.png');
   background-position: center bottom;
@@ -435,7 +451,7 @@ BEGIN COLOR SECTION
 }
 
    .james-cloth-bg{
-     background: url('./jameswithclothes.png');
+     background: url('./jameswithcloth.jpg');
      background-position: right;
      background-repeat: repeat-x;
      background-color: #070d01;
@@ -488,7 +504,7 @@ BEGIN COLOR SECTION
 .red-blue-square-bg{
   background:url(
 
-  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIklEQVQoU2NkllT/z0AEYByZCo8LCMCDx4ZTHGdAMVJdIQDXAA+ftkSBzgAAAABJRU5ErkJggg==
+  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQoU2NkllT/z0AEYBxViC+UwMGz5ucthhB2NbyhSXQ4AgDS7A+fubfQ+gAAAABJRU5ErkJggg==
   ) repeat;
 }
 .stone-cloud-stripe-bg{

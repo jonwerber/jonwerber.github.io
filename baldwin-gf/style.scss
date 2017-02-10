@@ -65,9 +65,7 @@ BEGIN GOOGLEFONT SECTION
   font-family: 'Quando', serif;
 }
 
-.doris {
-  font-family: 'Dosis', sans-serif;
-}
+
 
 .hammersmith-one {
   font-family: 'Hammersmith One', sans-serif;
@@ -126,7 +124,7 @@ BEGIN GOOGLEFONT SECTION
   font-family: 'Berkshire Swash', cursive;
 }
 
-.aquafina-script {
+.aguafina-script {
   font-family: 'Aguafina Script', cursive;
 }
 
@@ -568,6 +566,9 @@ BEGIN COLOR SECTION
 .pink-gradient{
   background: linear-gradient(to top, #fa5867 0%, #c65058 100%);
 }
+.red-pink-gradient{
+  background: linear-gradient(to bottom, #fa5867 0%, #bf0016 100%);
+}
 .pink-lemonaid-gradient{
   background: linear-gradient(to top, #fa5867 0%, #F1D302 100%);
 }
@@ -578,6 +579,15 @@ END COLORS
 /*
 BEGIN TYPE STYLE SIZE AND SPACING SECTION
 */
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: inherit;
+}
+a:hover{
+  color: #F1D302;
+}
 .quote {
   margin: 0 50px;
 }

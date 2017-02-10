@@ -366,11 +366,11 @@ BEGIN COLOR SECTION
 }
 
 .cover-photo-bg{
-  background: url('./cover-photo.png');
+  background: url('./coverphoto.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-color: #F5F2E9;
-  background-size: contain;
+  background-size: cover;
 }
 
 .king-baldwin-bg{
@@ -457,6 +457,22 @@ BEGIN COLOR SECTION
      background-color: #070d01;
      background-size: contain;
    }
+.hug-pic-bg{
+  background: url('./hugpic.jpg');
+  background-position: right;
+  background-repeat: repeat-x;
+  background-color: #070d01;
+  background-size: contain;
+}
+
+.smirk-pic-bg{
+  background: url('./james-baldwin-smirk.jpg');
+  background-position: right;
+  background-repeat: repeat-x;
+  background-color: #070d01;
+  background-size: contain;
+}
+
 
 .nina-james-bg{
   background: url('./ninajames.png');
@@ -542,6 +558,9 @@ BEGIN COLOR SECTION
 }
 .yellow-brown-gradient{
   background: linear-gradient(to bottom, #F1D302 0%,#22181C 100%);
+}
+.fire-gradient{
+  background: linear-gradient(to top, #ffdd00 0%, #bf5c05 50%,#991d07 100% );
 }
 .purple-gradient{
   background: linear-gradient(to bottom, #c7b8ea 0%, #7359b1 100%);

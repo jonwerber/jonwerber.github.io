@@ -230,6 +230,9 @@ font-family: 'Catamaran', sans-serif;
 .heebo{
 font-family: 'Heebo', sans-serif;
 }
+.six-caps{
+  font-family: 'Six Caps', sans-serif;
+}
 /*
 END GOOGLEFONT SECTION
 */
@@ -423,12 +426,20 @@ BEGIN COLOR SECTION
   background-position: center;
 }
 
-.smile-circle{
+.smile-circle-bg{
   background: url('./smile-circle.png');
   background-repeat: repeat;
   background-color: #9de0ba;
   background-position: center;
 }
+
+.eyes-bg {
+  background: url('./eyes.png');
+  background-repeat: repeat;
+  background-color: #240000;
+  background-position: center;
+}
+
 .plains-bg{
   background: url('./planes.jpg');
   background-position: top center;

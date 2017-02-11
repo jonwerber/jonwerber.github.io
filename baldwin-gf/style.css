@@ -343,10 +343,22 @@ BEGIN COLOR SECTION
   background-color: #7359b1;
   background-position: center; }
 
+.medium-format-bg {
+  background: url("./james-medium-format.png");
+  background-repeat: repeat;
+  background-color: #691417;
+  background-position: left; }
+
 .smile-circle-bg {
   background: url("./smile-circle.png");
   background-repeat: repeat;
   background-color: #9de0ba;
+  background-position: center; }
+
+.smoking-circle-bg {
+  background: url("./smoking-circle.png");
+  background-repeat: repeat;
+  background-color: #AF1201;
   background-position: center; }
 
 .eyes-bg {

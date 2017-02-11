@@ -171,6 +171,24 @@ BEGIN GOOGLEFONT SECTION
 .libre-baskerville {
   font-family: 'Libre Baskerville', serif; }
 
+.mrs-saint-delafield {
+  font-family: 'Mrs Saint Delafield', cursive; }
+
+.yesteryear {
+  font-family: 'Yesteryear', cursive; }
+
+.mrs-sheppards {
+  font-family: 'Mrs Sheppards', cursive; }
+
+.redressed {
+  font-family: 'Redressed', cursive; }
+
+.catamaran {
+  font-family: 'Catamaran', sans-serif; }
+
+.heebo {
+  font-family: 'Heebo', sans-serif; }
+
 /*
 END GOOGLEFONT SECTION
 */
@@ -314,6 +332,18 @@ BEGIN COLOR SECTION
   background: url("./firenexttime.png");
   background-repeat: repeat;
   background-color: #ABA194;
+  background-position: center; }
+
+.triangle-pic-bg {
+  background: url("./triangle.png");
+  background-repeat: repeat;
+  background-color: #7359b1;
+  background-position: center; }
+
+.smile-circle {
+  background: url("./smile-circle.png");
+  background-repeat: repeat;
+  background-color: #9de0ba;
   background-position: center; }
 
 .plains-bg {
@@ -516,7 +546,7 @@ h3 {
   font-size: 7vw; }
   @media screen and (max-width: 800px) {
     .vw7 {
-      font-size: 50px;
+      font-size: 48px;
       line-height: 40px; } }
 
 .vw6 {
@@ -537,27 +567,29 @@ h3 {
   font-size: 4vw; }
   @media screen and (max-width: 800px) {
     .vw4 {
-      font-size: 36px;
-      line-height: 32px; } }
+      font-size: 32px;
+      line-height: 28px; } }
 
 .vw3 {
   font-size: 3vw; }
   @media screen and (max-width: 800px) {
     .vw3 {
-      font-size: 28px;
+      font-size: 26px;
       line-height: 22px; } }
 
 .vw2-5 {
   font-size: 2.5vw; }
   @media screen and (max-width: 800px) {
     .vw2-5 {
-      font-size: 20px; } }
+      font-size: 18px;
+      line-height: 16px; } }
 
 .vw1-5 {
   font-size: 1.5vw; }
   @media screen and (max-width: 800px) {
     .vw1-5 {
-      font-size: 15px; } }
+      font-size: 15px;
+      line-height: 12px; } }
 
 .lh-huge {
   line-height: 82%; }

@@ -24,24 +24,13 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.44679353">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="175">
-                  <caret line="1055" column="66" selection-start-line="1055" selection-start-column="66" selection-end-line="1055" selection-end-column="66" />
-                  <folding>
-                    <marker date="1486831469000" expanded="true" signature="8455:9129" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="13553:14574" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="16178:16810" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="16205:16541" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="22242:22858" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="22269:22516" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="24272:25195" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="24299:24616" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="28190:28570" ph="..." />
-                    <marker date="1486831469000" expanded="true" signature="35388:36626" ph="..." />
-                  </folding>
+                <state relative-caret-position="15825">
+                  <caret line="1056" column="66" selection-start-line="1056" selection-start-column="66" selection-end-line="1056" selection-end-column="66" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -49,8 +38,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="534" column="29" selection-start-line="534" selection-start-column="29" selection-end-line="534" selection-end-column="29" />
+                <state relative-caret-position="227">
+                  <caret line="872" column="0" selection-start-line="872" selection-start-column="0" selection-end-line="872" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -59,12 +48,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="1078" column="7" selection-start-line="1078" selection-start-column="7" selection-end-line="1078" selection-end-column="7" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -78,8 +67,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.scss" />
       </list>
     </option>
   </component>
@@ -220,11 +209,12 @@
       <updated>1486607781271</updated>
       <workItem from="1486607782739" duration="42855000" />
       <workItem from="1486749412980" duration="19826000" />
+      <workItem from="1486831957932" duration="976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62681000" />
+    <option name="totallyTimeSpent" value="63657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
@@ -266,6 +256,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8010">
+          <caret line="534" column="29" selection-start-line="534" selection-start-column="29" selection-end-line="534" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15825">
+          <caret line="1055" column="66" selection-start-line="1055" selection-start-column="66" selection-end-line="1055" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7605">
           <caret line="507" column="0" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
           <folding />
@@ -288,18 +294,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="534" column="29" selection-start-line="534" selection-start-column="29" selection-end-line="534" selection-end-column="29" />
+        <state relative-caret-position="15825">
+          <caret line="1056" column="66" selection-start-line="1056" selection-start-column="66" selection-end-line="1056" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1078" column="7" selection-start-line="1078" selection-start-column="7" selection-end-line="1078" selection-end-column="7" />
+        <state relative-caret-position="227">
+          <caret line="872" column="0" selection-start-line="872" selection-start-column="0" selection-end-line="872" selection-end-column="0" />
           <folding />
         </state>
       </provider>

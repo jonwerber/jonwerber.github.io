@@ -440,6 +440,12 @@ BEGIN COLOR SECTION
   background-position: center;
 }
 
+.muted-color-face{
+  background: url('./muted-color-face.png');
+  background-repeat: repeat;
+  background-color: #f3b2b9;
+  background-position: center;
+}
 .smoking-circle-bg{
   background: url('./smoking-circle.png');
   background-repeat: repeat;
@@ -989,3 +995,16 @@ on smaller displays flip the details to the side
 .bottom10 {
   bottom: 100px;
 }
+
+//effects
+
+
+.hue {
+  -webkit-animation: hue 15s infinite;
+}
+
+@-webkit-keyframes hue {
+  0%, 100%  { -webkit-filter: hue-rotate(0deg); }
+  50% { -webkit-filter: hue-rotate(360deg); }
+}
+

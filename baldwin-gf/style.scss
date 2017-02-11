@@ -429,8 +429,8 @@ BEGIN COLOR SECTION
 .medium-format-bg{
   background: url('./james-medium-format.png');
   background-repeat: repeat;
-  background-color: ;
   background-position: left;
+  background-color: #691417;
 }
 
 .smile-circle-bg{
@@ -649,6 +649,9 @@ a:hover{
 }
 .quote {
   margin: 0 50px;
+  @media screen and (max-width: 800px){
+    margin: 0 5px;
+  }
 }
 
 .quote:before {
@@ -688,6 +691,7 @@ h3 {
 
 .margin-100 {
   margin: 100px;
+
 }
 
 .margin-50 {
@@ -716,8 +720,8 @@ h3 {
 .vw7 {
   font-size: 7vw;
   @media screen and (max-width: 800px) {
-    font-size: 48px;
-    line-height: 40px;
+    font-size: 42px;
+    line-height: 38px;
   }
 }
 
@@ -725,17 +729,16 @@ h3 {
 .vw6 {
   font-size: 6vw;
   @media screen and (max-width: 800px) {
-    font-size: 45px;
-    line-height: 38px;
+    font-size: 38px;
+    line-height: 32px;
 
   }
 }
-
 .vw5 {
   font-size: 5vw;
   @media screen and (max-width: 800px) {
-    font-size: 40px;
-    line-height: 36px;
+    font-size: 38px;
+    line-height: 34px;
 
   }
 }

@@ -24,7 +24,7 @@ app.controller('myCtrl', function ($scope, $http) {
     for (var i = 0; i < sources.length; i++) {
         $http({
             method: 'GET',
-            url: 'https://newsapi.org/v1/articles?source=' + sources[i] + '&sortBy=latest&apiKey=79b5eacee55a4e8d89ed43a73add9edf'
+            url: 'https://newsapi.org/v1/articles?source=' + sources[i] + '&sortBy=top&apiKey=79b5eacee55a4e8d89ed43a73add9edf'
         }).then(function successCallback(response) {
             Array.prototype.push.apply($scope.articles, response.data.articles);
             console.log($scope.articles);

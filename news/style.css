@@ -54,7 +54,9 @@ body {
 .title {
   padding: 5px 0 0 15px;
   margin: 2px;
-  text-align: right; }
+  text-align: right;
+  font-size: 18px;
+  line-height: 17px; }
 
 .author {
   font-size: 13px;
@@ -67,7 +69,10 @@ body {
   color: white; }
 
 .description {
-  padding-left: 10px; }
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right; }
 
 .date {
   -webkit-transform: rotate(270deg);
@@ -76,10 +81,10 @@ body {
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   font-size: 14px;
-  left: -39px;
+  left: -36px;
   top: 46px;
   position: absolute;
-  color: #555e5e; }
+  color: #fff; }
 
 .uppercase {
   text-transform: uppercase; }

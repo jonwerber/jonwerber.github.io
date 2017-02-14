@@ -31,7 +31,7 @@ app.controller('myCtrl', function ($scope, $http) {
         //    console.log(response.data.articles);
 
         }, function errorCallback(response) {
-        a    console.log("ERROR + " + response)
+            console.log("ERROR + " + response)
         });
     }
 });

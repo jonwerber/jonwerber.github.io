@@ -18,7 +18,7 @@ app.filter('replace', function(){
 app.controller('myCtrl', function ($scope, $http) {
 
     $scope.yes = 'yaaassss';
-    var sources = ['techcrunch', 'hacker-news','mashable', 'fortune', 'google-news', 'ars-technica', 'engadget', 'polygon', 'recode', 'techradar', 'the-next-web', 'the-verge'];
+    var sources = ['techcrunch', 'hacker-news','mashable', 'bbc-news', 'national-geographic', 'independent', 'fortune', 'google-news', 'ars-technica', 'engadget', 'polygon', 'recode', 'techradar', 'the-next-web', 'the-verge'];
     $scope.articles = [];
 
     for (var i = 0; i < sources.length; i++) {

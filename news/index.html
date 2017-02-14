@@ -7,31 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Mono:100i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Mono:100i|Droid+Serif" rel="stylesheet">
     <title>NewsTroff</title>
 </head>
 <body>
 <div class="nav-bar">
-<h1 class="  roboto-mono rotate">newsTroff</h1>
+    <h1 class=" roboto-mono rotate">newsTroff</h1>
 
 
 </div>
 <div ng-app="newsTroff" ng-controller="myCtrl">
-    <div class="container" >
-        <div class=" box greenlink" ng-repeat="article in articles | orderBy:'publishedAt'">
+    <div class="container">
 
-            <a href="{{article.url}}" target="_blank" > <h3 class="title roboto-mono">{{ article.title| limitTo: 60 }}{{article.title.length > 60 ? '...' : ''}}</h3></a>
-            <p class="description roboto">{{ article.description | limitTo: 200 }}{{article.description.length > 200 ? '...' : ''}}
-            </p>
 
-            <p><span class="author roboto-con uppercase">{{article.author | limitTo: 50 }}{{article.author.length > 50 ? '...' : ''}}</span>
-                <span class="roboto-mono url "> <a href="{{article.url}}" target="_blank"> {{article.url | replace}}</a></span>
-            </p>
+            <div  ng-repeat="article in articles | orderBy:'publishedAt'" class=" box greenlink">
 
+                <a href="{{article.url}}" target="_blank"><h3 class="title roboto-mono">{{ article.title| limitTo: 80
+                    }}{{article.title.length > 80 ? '...' : ''}}</h3></a>
+                <p class="description roboto">{{ article.description | limitTo: 200 }}{{article.description.length > 200
+                    ? '...' : ''}}
+                </p>
+<div class="date roboto-mono">{{article.publishedAt | date }}</div>
+                <p><span class="author roboto-con uppercase">{{article.author | limitTo: 50 }}{{article.author.length > 50 ? '...' : ''}}</span>
+                    <span class="roboto-mono url "> <a href="{{article.url}}"
+                                                       target="_blank"> {{article.url | replace}}</a></span>
+                </p>
+
+            </div>
         </div>
+        <div class="center greenlink powered-by"><a href="http://wwww.newsapi.org">powered by NewsAPI.org</a></div>
     </div>
-    <div class="center greenlink powered-by"><a href="http://wwww.newsapi.org">powered by NewsAPI.org.</a></div>
-
 </div>
 </body>
 </html>

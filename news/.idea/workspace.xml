@@ -36,11 +36,11 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
               <folding>
                 <element signature="e#474#643#1" expanded="true" />
-                <element signature="e#783#945#1" expanded="true" />
+                <element signature="e#801#963#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,12 +205,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487015071962</updated>
-      <workItem from="1487015073262" duration="24090000" />
+      <workItem from="1487015073262" duration="24153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24090000" />
+    <option name="totallyTimeSpent" value="24153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
@@ -302,11 +302,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
           <folding>
             <element signature="e#474#643#1" expanded="true" />
-            <element signature="e#783#945#1" expanded="true" />
+            <element signature="e#801#963#1" expanded="true" />
           </folding>
         </state>
       </provider>

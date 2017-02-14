@@ -122,11 +122,12 @@ body {
   text-align: center; }
 
 .powered-by {
+  margin: 50px;
   padding: 10px; }
   .powered-by a {
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-size: 19px;
     text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

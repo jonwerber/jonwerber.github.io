@@ -25,9 +25,9 @@
                 <a href="{{article.url}}" target="_blank"><h3 class="title roboto-mono">{{ article.title| limitTo: 80
                     }}{{article.title.length > 80 ? '...' : ''}}</h3></a>
 
-                <p class="description roboto"  ng-if="article.description.length > 75">{{ article.description | limitTo: 200 }}{{article.description.length > 200
+                <p class="description roboto"  ng-if="article.description.length > 60">{{ article.description | limitTo: 200 }}{{article.description.length > 200
                     ? '...' : ''}}</p>
-                <h3 class="big-description roboto-mono" ng-if="article.description.length < 75">{{article.description}}</h3>
+                <h3 class="big-description roboto-mono" ng-if="article.description.length < 60">{{article.description}}</h3>
                 <h1 ng-if="!article.description" class="center"> ¯\_(ツ)_/¯ </h1>
 
 <div class="date roboto-mono">{{article.publishedAt |  date:'MM-dd HH:mm ' }}</div>

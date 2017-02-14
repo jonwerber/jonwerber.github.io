@@ -8,22 +8,33 @@
   font-family: 'Roboto Mono', monospace; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #00cc00; }
 
 body {
-  background-color: #292929; }
+  background-color: #101111; }
+
+.nav-bar {
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 50px;
+  position: fixed;
+  background-color: #00cc00; }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px; }
+  margin-top: 60px; }
 
 .box {
+  background-color: #080909;
+  overflow: hidden;
   height: 300px;
   width: 300px;
   border: .5px white solid;
-  padding: 10px;
+  padding: 5px 10px;
   margin: 5px;
   color: #fff;
   display: flex;
@@ -37,11 +48,18 @@ body {
   padding: 2px;
   margin: 2px; }
 
+.author {
+  font-size: 13px;
+  line-height: 10px; }
+
 .url {
   font-size: 14px;
   letter-spacing: -1px;
   line-height: 10px;
   color: white; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 .color1 {
   background-color: #e4572e; }

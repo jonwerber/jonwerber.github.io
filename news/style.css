@@ -30,11 +30,11 @@ body {
 .box {
   background-color: #080909;
   overflow: hidden;
-  height: 300px;
-  width: 300px;
+  height: 310px;
+  width: 290px;
   border: .5px white solid;
   padding: 5px 10px;
-  margin: 5px;
+  margin: 10px;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -80,7 +80,9 @@ body {
   -moz-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  transform: rotate(270deg); }
+  transform: rotate(270deg);
+  margin: 230px 10px 0px 0px;
+  font-size: 50px; }
 
 .center {
   text-align: center; }

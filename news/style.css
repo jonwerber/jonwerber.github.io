@@ -1,0 +1,61 @@
+.roboto-con {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.roboto {
+  font-family: 'Roboto', serif; }
+
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #292929; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px; }
+
+.box {
+  height: 300px;
+  width: 300px;
+  border: .5px white solid;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  @media screen and (max-width: 700px) {
+    .box {
+      width: 90%; } }
+
+.title {
+  padding: 2px;
+  margin: 2px; }
+
+.url {
+  font-size: 14px;
+  letter-spacing: -1px;
+  line-height: 10px;
+  color: white; }
+
+.color1 {
+  background-color: #e4572e; }
+
+.color2 {
+  background-color: #d9cfc1; }
+
+.color3 {
+  background-color: #29335c; }
+
+.color4 {
+  background-color: #54b48f; }
+
+.color5 {
+  background-color: #f4b535; }
+
+/*# sourceMappingURL=style.css.map */

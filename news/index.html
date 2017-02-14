@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Mono:100i" rel="stylesheet">
+    <title>NewsTroff</title>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div class="container" >
+        <div class=" box" ng-repeat="article in articles | orderBy : article.publishedAt">
+            <a href="{{article.url}}" target="_blank" > <h3 class="title roboto-mono">{{ article.title}}</h3></a>
+            <p class="description roboto">{{ article.description | limitTo: 200 }}{{article.description.length > 200 ? '...' : ''}}
+            </p>
+            <span class="author roboto-mono"> {{article.author}} <span ng-if="article.author">,</span>  <a href="{{article.url}}" target="_blank">Read it</a> </span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="scripts.js"></script>

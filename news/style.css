@@ -74,10 +74,10 @@ body {
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   font-size: 14px;
-  left: -35px;
-  top: 47px;
+  left: -39px;
+  top: 46px;
   position: absolute;
-  color: #fff; }
+  color: #555e5e; }
 
 .uppercase {
   text-transform: uppercase; }

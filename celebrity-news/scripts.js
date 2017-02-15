@@ -31,6 +31,26 @@ app.controller('mainCtrl', function ($scope, $http) {
         getNews('mtv-news-uk', $scope.mtvNewsUk );
     }
 
+    $scope.getIgn = function() {
+        $scope.ign = [];
+        getNews('ign', $scope.ign );
+    }
+
+    $scope.getMirror = function() {
+        $scope.mirror = [];
+        getNews('mirror', $scope.mirror );
+    }
+
+    $scope.getHuffPo = function() {
+        $scope.huffPo = [];
+        getNews('the-huffington-post', $scope.huffPo );
+    }
+    $scope.getReddit = function() {
+        $scope.reddit = [];
+        getNews('reddit-r-all', $scope.reddit );
+    }
+
+
 
     $scope.getEntertainmentWeekly = function() {
         $scope.entertainmentWeekly = [];
@@ -48,7 +68,7 @@ app.controller('mainCtrl', function ($scope, $http) {
             url: 'https://newsapi.org/v1/articles?source=' + source + '&sortBy=top&apiKey=79b5eacee55a4e8d89ed43a73add9edf'
         }).then(function successCallback(response) {
             Array.prototype.push.apply(arrayName, response.data.articles);
-            console.log($scope.articles);
+            console.log(source + arrayName + $scope.articles);
 
         }, function errorCallback(response) {
             console.log("ERROR + " + response)

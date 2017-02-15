@@ -16,18 +16,25 @@
     <img src="logo.png" alt="">
 </header>
 
+
+    <!-- START CONTAINER -->
 <div class="container ">
-    <div class="left-side" ng-init="getEntertainmentWeekly()">
-        <div ng-repeat="article in entertainmentWeekly">
-            {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+    <!-- START CONTAINER -->
+
+
+
+    <!-- START LEFT SIDE COL -->
+    <div class="left-side">
+
+        <div ng-init="getEntertainmentWeekly()">
+            <div ng-repeat="article in entertainmentWeekly">
+                {{article}}<img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+            </div>
         </div>
-    </div>
 
-    <div class="main">
-
-        <div ng-init="getMtvNews()">
-            <div ng-repeat="article in mtvNews">
-                {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+        <div ng-init="getReddit()">
+            <div ng-repeat="article in reddit">
+                {{article}}<img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
             </div>
         </div>
 
@@ -36,18 +43,59 @@
                 {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
             </div>
         </div>
+        
+    </div>
+    <!-- END LEFT SIDE COL -->
+
+    <!-- START MIDDLE COL -->
+
+    <div class="main">
+
+        <div ng-init="getMtvNews()">
+            <div ng-repeat="article in mtvNews">
+                {{article}}
+                <img src="{{article.urlToImage}}" alt="{{article.title}}">
+            </div>
+        </div>
+
+        <div ng-init="getHuffPo()">
+            <div ng-repeat="article in huffPo">
+                {{article}}<img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+            </div>
+        </div>
+
+
 
     </div>
+    <!-- END MIDDLE COL -->
 
+
+    <!-- START RIGHT SIDE COL -->
     <div class="right-side">
-        <div class="side-article" ng-init="getDailyMail()">
+
+        <div ng-init="getDailyMail()">
             <div ng-repeat="article in dailyMail">
-                {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+                {{article}}<img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+            </div>
+        </div>
+
+
+
+        <div ng-init="getMirror()">
+            <div ng-repeat="article in mirror">
+                {{article}}<img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
             </div>
         </div>
 
     </div>
+    <!-- END RIGHT SIDE COL -->
+
+
+
+    <!-- END CONTAINER -->
 </div>
+    <!-- END CONTAINER -->
+
 
 <footer>footers</footer>
 

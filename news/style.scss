@@ -4,20 +4,16 @@ $color3: rgba(41, 51, 92, 1);
 $color4: rgba(84, 180, 143, 1);
 $color5: rgba(244, 181, 53, 1);
 
-.roboto-con {
-  font-family: 'Roboto Condensed', sans-serif;
+.sans-serif {
+  font-family: sans-serif;
 }
 
-.roboto {
-  font-family: 'Roboto', serif;
+.serif {
+  font-family: serif;
 }
 
-.roboto-mono {
-  font-family: 'Roboto Mono', monospace;
-}
-.droid-serif{
-  font-family: 'Droid Serif', serif;
-
+.mono {
+  font-family: monospace;
 }
 
 .greenlink {
@@ -26,7 +22,9 @@ $color5: rgba(244, 181, 53, 1);
     text-decoration: none;
   }
 }
-
+.read-more{
+  font-size: 55px;
+}
 body {
   background:url(
   data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkOMPwn8GDgYFhBwMDPpqRQYThPwMhsIOBgTiFDMQqHLEmAgBTAxNh5LxvVAAAAABJRU5ErkJggg==
@@ -37,30 +35,35 @@ body {
 
 .nav-bar {
   height: 100vh;
-  left: 0;
+  right: 0;
   top: 0;
   position: fixed;
   width: 70px;
-  color: #00cc00;
+  color: #00be00;
   background:url(
 
   data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJklEQVQoU2NkOMPwn8GZgYFhLwMDPpqRgZ/hPyFFIHnGUROpEo4AR+I7SNbBG6UAAAAASUVORK5CYII=
   ) repeat;
 }
-
+.reload-button{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-left: 70px;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-right: 70px;
 }
 
 .box {
   position: relative;
   background-color: #080909;
   overflow: hidden;
-  height: 310px;
+  height: 320px;
   width: 290px;
   border: 1px white dotted;
   padding: 5px 10px;
@@ -83,11 +86,13 @@ body {
 }
 
 .author {
+  text-align: center;
   font-size: 13px;
   line-height: 10px;
 }
 
 .url {
+  text-align: center;
   font-size: 14px;
   letter-spacing: -1px;
   line-height: 10px;
@@ -142,6 +147,15 @@ body {
   background-color: $color5;
 }
 
+.rotate-90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  margin: 26px -9px 0px 0px;
+  font-size: 50px;
+}
+
 .rotate {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -161,7 +175,7 @@ body {
   padding: 10px;
   a {
   color: white;
-  font-family: 'Roboto Mono', monospace;
+  font-family: monospace;
   font-size: 18px;
     text-decoration: none;
   }

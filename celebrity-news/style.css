@@ -1,0 +1,57 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: aquamarine; }
+
+.container {
+  display: flex;
+  flex-direction: row; }
+  @media screen and (max-width: 1200px) {
+    .container {
+      flex-direction: column; } }
+
+.left-side {
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: column;
+  width: 20%; }
+  @media screen and (max-width: 1200px) {
+    .left-side {
+      width: 100%;
+      order: 2; } }
+  .left-side img {
+    max-width: 100%; }
+
+.main {
+  background-color: hotpink;
+  width: 60%; }
+  @media screen and (max-width: 1200px) {
+    .main {
+      width: 100%;
+      order: 1; } }
+  .main img {
+    max-width: 100%; }
+
+.right-side {
+  background-color: indianred;
+  display: flex;
+  flex-direction: column;
+  width: 20%; }
+  @media screen and (max-width: 1200px) {
+    .right-side {
+      width: 100%;
+      order: 3; } }
+  .right-side img {
+    max-width: 100%; }
+
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: antiquewhite; }
+
+/*# sourceMappingURL=style.css.map */

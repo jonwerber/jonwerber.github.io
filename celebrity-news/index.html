@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <title>newsTroff</title>
+</head>
+
+<body ng-app="celebrityNews" ng-controller="mainCtrl">
+<header>
+
+    <img src="logo.png" alt="">
+</header>
+
+<div class="container ">
+    <div class="left-side" ng-init="getEntertainmentWeekly()">
+        <div ng-repeat="article in entertainmentWeekly">
+            {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div ng-init="getMtvNews()">
+            <div ng-repeat="article in mtvNews">
+                {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+            </div>
+        </div>
+
+        <div ng-init="getMtvNewsUk()">
+            <div ng-repeat="article in mtvNewsUk">
+                {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="right-side">
+        <div class="side-article" ng-init="getDailyMail()">
+            <div ng-repeat="article in dailyMail">
+                {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>footers</footer>
+
+</body>
+</html>
+<script src="scripts.js"></script>

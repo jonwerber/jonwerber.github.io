@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <title>newsTroff</title>
+    <title>News Dribble</title>
 </head>
 
 <body ng-app="celebrityNews" ng-controller="mainCtrl">
@@ -28,22 +28,25 @@
 
         <div ng-init="getEntertainmentWeekly()">
             <div ng-repeat="article in entertainmentWeekly">
-                {{article}}<img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <a href="{{article.url}}">{{article.title}}</a>
+
             </div>
         </div>
 
         <div ng-init="getReddit()">
             <div ng-repeat="article in reddit">
-                {{article}}<img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <a href="{{article.url}}">{{article.title}}</a>
             </div>
         </div>
 
         <div ng-init="getMtvNewsUk()">
             <div ng-repeat="article in mtvNewsUk">
-                {{article}}<img src="{{article.urlToImage}}" alt="{{article.title}}">
+                <img src="{{article.urlToImage}}" alt="{{article.title}}">
+                <a href="{{article.url}}">{{article.title}}</a>
             </div>
         </div>
-        
+
     </div>
     <!-- END LEFT SIDE COL -->
 
@@ -53,14 +56,22 @@
 
         <div ng-init="getMtvNews()">
             <div ng-repeat="article in mtvNews">
-                {{article}}
                 <img src="{{article.urlToImage}}" alt="{{article.title}}">
+
+                <p>{{article.title}}. {{article.description}}</p>
+                <a href="{{article.url}}">{{article.author}}</a>, @ MTV NEWS
+
+
             </div>
         </div>
 
         <div ng-init="getHuffPo()">
             <div ng-repeat="article in huffPo">
-                {{article}}<img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+
+                <p>{{article.description}}</p>
+                <a href="{{article.url}}">{{article.author}}</a>, @ HUFFPO
+
             </div>
         </div>
 
@@ -75,7 +86,8 @@
 
         <div ng-init="getDailyMail()">
             <div ng-repeat="article in dailyMail">
-                {{article}}<img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <a href="{{article.url}}">{{article.title}}</a>
             </div>
         </div>
 
@@ -83,7 +95,8 @@
 
         <div ng-init="getMirror()">
             <div ng-repeat="article in mirror">
-                {{article}}<img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <a href="{{article.url}}">{{article.title}}</a>
             </div>
         </div>
 

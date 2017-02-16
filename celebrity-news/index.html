@@ -29,21 +29,21 @@
         <div ng-init="getEntertainmentWeekly()">
             <div ng-repeat="article in entertainmentWeekly">
                 <img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
-                <a href="{{article.url}}">{{article.title}}</a>
+                <a href="{{article.url}}" class="side-margin">{{article.title}}</a>
 
             </div>
         </div>
 
         <div ng-init="getReddit()">
             <h2 ng-repeat="article in reddit" class="pad-25">
-                <a href="{{article.url}}">{{article.title}}</a>
+                <a href="{{article.url}}" class="side-margin">{{article.title}}</a>
             </h2>
         </div>
 
         <div ng-init="getMtvNewsUk()">
             <div ng-repeat="article in mtvNewsUk">
                 <img src="{{article.urlToImage}}" alt="{{article.title}}">
-                <a href="{{article.url}}">{{article.title}}</a>
+                <a href="{{article.url}}" class="side-margin">{{article.title}}</a>
             </div>
         </div>
 

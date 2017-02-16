@@ -11,7 +11,8 @@ header {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border-bottom: 5px solid pink; }
 
 .container {
   padding-top: 100px;
@@ -64,7 +65,10 @@ footer {
   height: 120px;
   background-color: #fff; }
 
+.side-margin {
+  margin: 5px 10px; }
+
 .pad-25 {
-  padding: 50px 10px; }
+  padding: 25px 10px; }
 
 /*# sourceMappingURL=style.css.map */

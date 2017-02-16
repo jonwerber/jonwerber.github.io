@@ -35,9 +35,9 @@
         </div>
 
         <div ng-init="getReddit()">
-            <div ng-repeat="article in reddit">
+            <h2 ng-repeat="article in reddit" class="pad-25">
                 <a href="{{article.url}}">{{article.title}}</a>
-            </div>
+            </h2>
         </div>
 
         <div ng-init="getMtvNewsUk()">
@@ -65,15 +65,15 @@
             </div>
         </div>
 
-        <div ng-init="getHuffPo()">
+  <!--      <div ng-init="getHuffPo()">
             <div ng-repeat="article in huffPo">
-                <img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <img  src="{{article.urlToImage}}" alt="{{article.title}}">
 
                 <p>{{article.description}}</p>
                 <a href="{{article.url}}">{{article.author}}</a>, @ HUFFPO
 
             </div>
-        </div>
+        </div>-->
 
 
 
@@ -83,10 +83,9 @@
 
     <!-- START RIGHT SIDE COL -->
     <div class="right-side">
-
         <div ng-init="getDailyMail()">
             <div ng-repeat="article in dailyMail">
-                <img ng-if="$index %3 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                <img  src="{{article.urlToImage}}" alt="{{article.title}}">
                 <a href="{{article.url}}">{{article.title}}</a>
             </div>
         </div>

@@ -6,12 +6,15 @@ body, html {
 
 header {
   width: 100%;
-  height: 120px;
-  background-color: aquamarine;
-  position: fixed; }
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .container {
-  padding-top: 120px;
+  padding-top: 100px;
   display: flex;
   flex-direction: row; }
   @media screen and (max-width: 900px) {
@@ -19,7 +22,7 @@ header {
       flex-direction: column; } }
 
 .left-side {
-  background-color: darkgreen;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   width: 20%; }
@@ -28,20 +31,23 @@ header {
       width: 100%;
       order: 2; } }
   .left-side img {
-    max-width: 100%; }
+    max-width: 98%;
+    margin: 10px 1%; }
 
 .main {
-  background-color: hotpink;
-  width: 65%; }
+  background-color: #fff;
+  width: 65%;
+  text-align: center; }
   @media screen and (max-width: 900px) {
     .main {
       width: 100%;
       order: 1; } }
   .main img {
-    max-width: 100%; }
+    max-width: 96%;
+    margin: 10px 2%; }
 
 .right-side {
-  background-color: indianred;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   width: 15%; }
@@ -50,11 +56,15 @@ header {
       width: 100%;
       order: 3; } }
   .right-side img {
-    max-width: 100%; }
+    max-width: 98%;
+    margin: 10px 1%; }
 
 footer {
   width: 100%;
   height: 120px;
-  background-color: antiquewhite; }
+  background-color: #fff; }
+
+.pad-25 {
+  padding: 50px 10px; }
 
 /*# sourceMappingURL=style.css.map */

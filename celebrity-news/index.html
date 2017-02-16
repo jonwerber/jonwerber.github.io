@@ -65,7 +65,7 @@
             </div>
         </div>
 
-  <!--      <div ng-init="getHuffPo()">
+ <!--       <div ng-init="getHuffPo()">
             <div ng-repeat="article in huffPo">
                 <img  src="{{article.urlToImage}}" alt="{{article.title}}">
 
@@ -96,6 +96,16 @@
             <div ng-repeat="article in mirror">
                 <img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
                 <a href="{{article.url}}">{{article.title}}</a>
+            </div>
+        </div>
+
+        <div ng-init="getHuffPo()">
+            <div ng-repeat="article in huffPo">
+                <img  src="{{article.urlToImage}}" alt="{{article.title}}">
+
+                <p>{{article.description}}</p>
+                <a href="{{article.url}}">{{article.author}}</a>, @ HUFFPO
+
             </div>
         </div>
 

@@ -1,0 +1,15 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+#content {
+display: flex;
+    justify-content: space-between;
+
+}
+
+button{
+    width: 14.28%;
+    height: 100vh;
+
+}

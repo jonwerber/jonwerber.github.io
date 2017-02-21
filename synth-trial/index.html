@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>synth trial</title>
+
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/tone/build/Tone.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="scale-synth" ng-controller="mainCtrl">
+
+
+<div id="content">
+
+    <button ng-repeat="note in scale" id="{{note}}"></button>
+
+</div>
+
+</body>
+<script src="scripts.js"></script>
+</html>

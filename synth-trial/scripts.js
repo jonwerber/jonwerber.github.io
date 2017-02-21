@@ -30,34 +30,39 @@ app.controller('mainCtrl', function ($scope, $http) {
         return keys;
     }
 
-    $scope.scale = getScale('C',3);
-    console.log(getScale('Am',6));
-    console.log(getScale('Bb',2));
+    $scope.scale = getScale('Bm',3);
+   // console.log(getScale('Am',6));
+    //console.log(getScale('Bb',2));
 
     
     window.onload = function() {
 //working on mobile?
         document.querySelectorAll('button').forEach(function (button) {
 
-            button.addEventListener("touchstart", function (e) {
+  /*          button.addEventListener("touchstart", function (e) {
                 //play the note on mouse down
                 synth.triggerAttack(e.target.id)
-                console.log(e.target);
-                console.log(e.target.id);
+               console.log('TOUCHSTART' + e.target);
+               // console.log(e.target);
+                //console.log(e.target.id);
             })
             button.addEventListener('touchend', function (e) {
-                //release on mouseup
+                console.log('touchend' + e.target);
                 synth.triggerRelease()
             })
-
+*/
             button.addEventListener('mousedown', function (e) {
                 //play the note on mouse down
                 synth.triggerAttack(e.target.id)
-                console.log(e.target);
-                console.log(e.target.id);
+                console.log('mousedown' + e.target);
+
+                //console.log(e.target);
+               // console.log(e.target.id);
             })
             button.addEventListener('mouseup', function (e) {
                 //release on mouseup
+                console.log('mouseup' + e.target);
+
                 synth.triggerRelease()
             })
         });
@@ -67,24 +72,21 @@ app.controller('mainCtrl', function ($scope, $http) {
 
 
 var synth = new Tone.MonoSynth({
-    "portamento" : 0.01,
-    "oscillator" : {
-        "type" : "square"
+    "oscillator": {
+        "detune": 0,
+        "type": "custom",
+        "partials" : [2, 1, 2, 2],
+        "phase": 0,
+        "volume": 0
     },
-    "envelope" : {
-        "attack" : 0.005,
-        "decay" : 0.2,
-        "sustain" : 0.4,
-        "release" : 1.4,
+    "envelope": {
+        "attack": 0.005,
+        "decay": 0.3,
+        "sustain": 0.2,
+        "release": 1,
     },
-    "filterEnvelope" : {
-        "attack" : 0.005,
-        "decay" : 0.1,
-        "sustain" : 0.05,
-        "release" : 0.8,
-        "baseFrequency" : 300,
-        "octaves" : 4
-    }
+    "portamento": 0.01,
+    "volume": 20
 }).toMaster();
 
 

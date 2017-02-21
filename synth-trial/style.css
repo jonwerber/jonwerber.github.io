@@ -2,14 +2,20 @@ html,body {
     margin: 0;
     padding: 0;
 }
+
+#nav{
+   height: 20vh;
+}
+/* make sure to always stay in the same perspective on mobile */
 #content {
 display: flex;
     justify-content: space-between;
+    height:80vh;
 
 }
 
-button{
+.key{
     width: 14.28%;
-    height: 100vh;
-
+    height: 100%;
+    border: 1px solid black;
 }

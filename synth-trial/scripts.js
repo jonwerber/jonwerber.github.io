@@ -5,9 +5,9 @@ app.controller('mainCtrl', function ($scope, $http) {
     majorSemiTones = [2,2,1,2,2,2];
     minorSemiTones = [2,1,2,2,1,2];
     KEYS = ["A", "Bb", "B", "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab"];
-    KEYS_NORMALIZED = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
+    //KEYS_NORMALIZED = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 
-   function getScale(scaleName, vertical){
+   function getScale(scaleName, position){
         var tonic = scaleName.replace("m", "");
         var keys = [];
         var minor = false;
@@ -19,7 +19,7 @@ app.controller('mainCtrl', function ($scope, $http) {
         }
         scaleIndex = KEYS.indexOf(tonic);// starts on the tonic
         for(var i = 0; i < 7; i++){
-            keys.push(KEYS[scaleIndex]+vertical);
+            keys.push(KEYS[scaleIndex]+position);
             if( scaleIndex + intervals[i] > KEYS.length - 1 ){
                 // if scale index = KEYS.length it should be 0
                 scaleIndex = scaleIndex + intervals[i] - KEYS.length;
@@ -36,7 +36,20 @@ app.controller('mainCtrl', function ($scope, $http) {
 
     
     window.onload = function() {
+//working on mobile?
         document.querySelectorAll('button').forEach(function (button) {
+
+            button.addEventListener("touchstart", function (e) {
+                //play the note on mouse down
+                synth.triggerAttack(e.target.id)
+                console.log(e.target);
+                console.log(e.target.id);
+            })
+            button.addEventListener('touchend', function (e) {
+                //release on mouseup
+                synth.triggerRelease()
+            })
+
             button.addEventListener('mousedown', function (e) {
                 //play the note on mouse down
                 synth.triggerAttack(e.target.id)

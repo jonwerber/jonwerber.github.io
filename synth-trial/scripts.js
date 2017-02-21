@@ -30,7 +30,7 @@ app.controller('mainCtrl', function ($scope, $http) {
         return keys;
     }
 
-    $scope.scale = getScale('Bm',3);
+    $scope.scale = getScale('B',3);
    // console.log(getScale('Am',6));
     //console.log(getScale('Bb',2));
 
@@ -39,7 +39,7 @@ app.controller('mainCtrl', function ($scope, $http) {
 //working on mobile?
         document.querySelectorAll('button').forEach(function (button) {
 
-  /*          button.addEventListener("touchstart", function (e) {
+            button.addEventListener("touchstart", function (e) {
                 //play the note on mouse down
                 synth.triggerAttack(e.target.id)
                console.log('TOUCHSTART' + e.target);
@@ -50,21 +50,20 @@ app.controller('mainCtrl', function ($scope, $http) {
                 console.log('touchend' + e.target);
                 synth.triggerRelease()
             })
-*/
-            button.addEventListener('mousedown', function (e) {
+ /*           button.addEventListener('mousedown', function (e) {
                 //play the note on mouse down
                 synth.triggerAttack(e.target.id)
                 console.log('mousedown' + e.target);
 
                 //console.log(e.target);
-               // console.log(e.target.id);
+                console.log(e.target.id);
             })
             button.addEventListener('mouseup', function (e) {
                 //release on mouseup
                 console.log('mouseup' + e.target);
 
                 synth.triggerRelease()
-            })
+            })*/
         });
     };
 });

@@ -15,7 +15,8 @@ display: flex;
 }
 
 .key{
-    width: 14.28%;
+    width: 14.2857%;
     height: 100%;
     border: 1px solid black;
+    border-radius: 0;
 }

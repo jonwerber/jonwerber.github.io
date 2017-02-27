@@ -21,46 +21,30 @@
     </div>
     <div class="container">
 
-        <div  class=" box greenlink">
 
-            <a href="#" target="_blank"><h3 class="title mono">
-                Article Title (Link)
-            </h3></a>
+        <div ng-repeat="article in articles | orderBy:'publishedAt':true" class=" box greenlink">
 
+            <a href="{{article.url}}" target="_blank"><h3 class="title mono">{{ article.title| limitTo: 73
+                }}{{article.title.length > 73 ? '...' : ''}}</h3></a>
 
-            <h3 class="big-description mono">Longer description</h3>
+            <p class="description sans-serif" ng-if="article.description.length > 65">{{ article.description | limitTo:
+                180 }}{{article.description.length > 180
+                ? '...' : ''}}</p>
+            <h3 class="big-description mono" ng-if="article.description.length < 65">{{article.description}}</h3>
+            <h1 ng-if="!article.description" class="center"> ¯\_(ツ)_/¯ </h1>
 
-
-            <div class="date mono">Date 00:00</div>
-            <p><span class="author sans-serif uppercase">Author Name</span>
+            <div class="date mono">{{article.publishedAt | date:'MM-dd HH:mm ' }}</div>
+            <p class=""><span class="author serif uppercase">{{article.author | limitTo: 20 }}</span>
+                <a href="{{article.url}}" class="">{{article.author.length > 20 ? '...' : ''}}</a>
                 <span class="mono url "> <a href="{{article.url}}"
-                                                   target="_blank"> Domain and Link.</a></span>
+                                            target="_blank"> {{article.url | replace}}</a></span>
             </p>
 
         </div>
-
-            <div  ng-repeat="article in articles | orderBy:'publishedAt':true" class=" box greenlink">
-
-                <a href="{{article.url}}" target="_blank"><h3 class="title mono">{{ article.title| limitTo: 73
-                    }}{{article.title.length > 73 ? '...' : ''}}</h3></a>
-
-                <p class="description sans-serif"  ng-if="article.description.length > 65">{{ article.description | limitTo: 180 }}{{article.description.length > 180
-                    ? '...' : ''}}</p>
-                <h3 class="big-description mono" ng-if="article.description.length < 65">{{article.description}}</h3>
-                <h1 ng-if="!article.description" class="center"> ¯\_(ツ)_/¯ </h1>
-
-<div class="date mono">{{article.publishedAt |  date:'MM-dd HH:mm ' }}</div>
-                <p class=""><span class="author serif uppercase">{{article.author | limitTo: 20 }}</span>
-                    <a href="{{article.url}}" class="">{{article.author.length > 20 ? '...' : ''}}</a>
-                    <span class="mono url "> <a href="{{article.url}}"
-                                                       target="_blank"> {{article.url | replace}}</a></span>
-                </p>
-
-            </div>
-        </div>
-        <div class="center greenlink powered-by"><a href="http://wwww.newsapi.org">powered by NewsAPI.org</a>
-            <a href="mailto:jonathanlouiswerber@gmail.com">, built by Jonathan Werber</a></div>
     </div>
+    <div class="center greenlink powered-by"><a href="http://wwww.newsapi.org">powered by NewsAPI.org</a>
+        <a href="mailto:jonathanlouiswerber@gmail.com">, built by Jonathan Werber</a></div>
+</div>
 </div>
 </body>
 </html>

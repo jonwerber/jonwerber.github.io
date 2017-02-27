@@ -19,7 +19,7 @@ $color5: rgba(244, 181, 53, 1);
 .greenlink {
   a {
     color: #00cc00;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 .read-more{
@@ -83,6 +83,9 @@ body {
   text-align: right;
   font-size: 18px;
   line-height: 19px;
+  a {
+    text-decoration: underline;
+  }
 }
 
 .author {

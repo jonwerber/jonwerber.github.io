@@ -9,7 +9,7 @@
 
 .greenlink a {
   color: #00cc00;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 .read-more {
   font-size: 55px; }
@@ -63,6 +63,8 @@ body {
   text-align: right;
   font-size: 18px;
   line-height: 19px; }
+  .title a {
+    text-decoration: underline; }
 
 .author {
   text-align: center;

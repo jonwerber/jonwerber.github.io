@@ -149,7 +149,7 @@ app.controller('movieCtrl', function ($scope, $http) {
 
         $http({
             method: 'GET',
-            url: 'http://www.omdbapi.com/?t=' + formattedMovie + '&y=&plot=long&tomatoes=true&r=json'
+            url: 'https://www.omdbapi.com/?t=' + formattedMovie + '&y=&plot=long&tomatoes=true&r=json'
         }).then(function successCallback(response) {
             console.log(response.data);
             $scope.title = response.data.Title;

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200|Peddana|Vampiro+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <title>Movie App</title>
+</head>
+<body ng-app="movieApp" ng-controller="movieCtrl">
+
+<div class="flex-grid">
+    <div class="flex-3 first flex-inner-grid">
+
+        <div class="flex-1 red">
+
+            <div id="nav">
+
+                <h1 class="vampiro fs-42 center">Film Search</h1>
+
+
+                <P class="pad-20 center oswald uppercase">Search for (almost) any movie!</P>
+                <form ng-submit="getMovieInfo()">
+
+                    <input ng-model="movie" class="oswald uppercase fs-16">
+                    <button ng-click="getMovieInfo()" class="oswald uppercase fs-16"> GO!</button>
+                </form>
+                <p ng-if="result == false">Sorry, can't find it!</p>
+            </div>
+            <div class="center fs-22">
+                <h2 class="pad-mar-0 oswald uppercase">{{movieObj.title}}, {{movieObj.year}} </h2>
+            <img src="{{movieObj.poster}}" class="current-poster">
+            </div>
+        </div>
+
+        <div class="flex-2">
+
+            <p class="film-title">{{movieObj.title}}</p>
+            <p class="film-basics">{{movieObj.year}}, {{movieObj.genre}}</p>
+            <div class="center v-pad-10">
+            <youtube ng-init="getMovieInfo()" width="{{yt.width}}" height="{{yt.height}}"
+                     videoid="{{yt.videoid}}" class="center"></youtube>
+            </div>
+            <div id="inner-content">
+
+
+
+
+                <span class="film-basics">Starring    </span>
+                <span class="film-people">{{movieObj.actors}}</span><br/>
+                <span class="film-basics">Written by  </span> <span class="film-people">{{movieObj.writer}}</span>
+                <span class="film-basics">Directed by </span> <span
+                    class="film-people">{{movieObj.director}}</span><br/>
+                <p class="film-description">{{movieObj.plot}}</p>
+                <p class="">{{movieObj.tomatoReview}}</p>
+                <a href="http://www.imdb.com/title/{{movieObj.imdbAddress}}" target="_blank"><p class="">IMDB</p></a>
+                <p class="">{{movieObj.imdbRating}}</p>
+                <a href="{{movieObj.tomatoUrl}}" target="_blank"><p class="">Rotten Tomatoes</p></a>
+                <p class="">{{movieObj.tomatoMeter}}</p>
+                <p class="">{{movieObj.tomatoReview}}</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--
+     <p> Or try your luck with a random genre film...</p>
+            <button ng-click="randomMovie(animated)" >Animated</button>,
+            <button ng-click="randomMovie(mindBending)" >Mind Benders</button>,
+            <button ng-click="randomMovie(comingOfAge)" >Coming of Age</button>,
+            <button ng-click="randomMovie(classics)" >classics</button>,
+    -->
+
+
+    <div class="flex-1 history">
+        <h1 class="vampiro">this is THIS IS that THAT</h1>
+        <h1 class="peddana">this is THIS IS that THAT</h1>
+        <h1 class="oswald">this is THIS IS that THAT</h1>
+
+        <h1>History</h1>
+        <div ng-repeat="movieObj in searchHistory track by $index">
+            <div ng-click="backToMovie(movieObj)">
+                <img src="{{movieObj.poster}}">
+                {{movieObj.title}}
+            </div>
+        </div>
+        {{ searchHistory }}
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="scripts.js"></script>

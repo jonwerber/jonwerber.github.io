@@ -12,85 +12,96 @@
 </head>
 <body ng-app="movieApp" ng-controller="movieCtrl">
 
-<div class="flex-grid">
-    <div class="flex-3 first flex-inner-grid">
+<div class="main-flex-container">
+    <!--at full width: 80% / 20% column flex view,  -->
+    <div class="main-content-container">
+        <!--top part container, block view on desktop, flex row -->
+        <div class="nav-bar dark-grey-bg off-white">
+            <h1 class="vampiro fs-42 center mar-0">Film Search</h1>
+            <form ng-submit="getMovieInfo()">
 
-        <div class="flex-1 red">
+                <input ng-model="movie" class="oswald uppercase fs-16 rounded pad-10">
+                <button ng-click="getMovieInfo()" class="oswald uppercase fs-16 rounded pad-10"> GO!</button>
+            </form>
+            <p ng-if="result == false">Sorry, can't find it!</p>
 
-            <div id="nav">
-
-                <h1 class="vampiro fs-42 center">Film Search</h1>
-
-
-                <P class="pad-20 center oswald uppercase">Search for (almost) any movie!</P>
-                <form ng-submit="getMovieInfo()">
-
-                    <input ng-model="movie" class="oswald uppercase fs-16">
-                    <button ng-click="getMovieInfo()" class="oswald uppercase fs-16"> GO!</button>
-                </form>
-                <p ng-if="result == false">Sorry, can't find it!</p>
-            </div>
-            <div class="center fs-22">
-                <h2 class="pad-mar-0 oswald uppercase">{{movieObj.title}}, {{movieObj.year}} </h2>
-            <img src="{{movieObj.poster}}" class="current-poster">
-            </div>
         </div>
 
-        <div class="flex-2">
+        <div class="content-container">
+            <!-- 80% -->
+            <div class="copy-block medium-grey-bg off-white fo-1 ">
+                <div>
+                    <p class=" fs-34 mar-0 uppercase pad-10">{{movieObj.title}}</p>
+                    <p class=" fs-18 mar-0 pad-10">{{movieObj.year}}, {{movieObj.country}}, {{movieObj.genre}}</p>
+                </div>
+                <h1 class="pad-20">{{movieObj.plot}}</h1>
+                <div class="flex-row">
+                    <div class="circle-container pad-20">
+                        <a href="http://www.imdb.com/title/{{movieObj.imdbAddress}}" target="_blank">
+                            <div class="circle-50 light-grey-bg dark-red gold-bg">
+                                <span class="">{{movieObj.imdbRating}}</span>
+                            </div>
+                            <span
+                                    class="pad-5">IMDB</span>
+                        </a>
+                    </div>
 
-            <p class="film-title">{{movieObj.title}}</p>
-            <p class="film-basics">{{movieObj.year}}, {{movieObj.genre}}</p>
-            <div class="center v-pad-10">
-            <youtube ng-init="getMovieInfo()" width="{{yt.width}}" height="{{yt.height}}"
-                     videoid="{{yt.videoid}}" class="center"></youtube>
+                    <div class="circle-container pad-20 ">
+                        <a href="{{movieObj.tomatoUrl}}" target="_blank">
+                            <div class="circle-50 dark-red-bg">
+                                <p class="pad-5">{{movieObj.tomatoMeter}}</p>
+                            </div>
+                            <span class="">Rotten Tomatoes</span>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
-            <div id="inner-content">
+
+            <div class="media-block medium-grey-bg off-white fo-2 " id="video">
+                <youtube ng-init="getMovieInfo()" width="{{yt.width}}" height="{{yt.height}}"
+                         videoid="{{yt.videoid}}" class="right pad-5">
+                </youtube>
+
+                <div class="film-details">
+                    <div class="pad-10 w-33">
+                        <p class="mar-0 uppercase light-grey ls-2p5 ">Written by</p>
+                        <p class="mar-0 pad-b-15">{{movieObj.writer}}</p>
+                        <p class="mar-0 uppercase light-grey ls-2p5">Directed by </p>
+                        <p class="mar-0">{{movieObj.director}}</p>
+                    </div>
+
+                    <div class="pad-10 w-33">
+                        <p class="mar-0 uppercase light-grey ls-2p5 ">Starring </p>
+                        <p class="mar-0 pad-b-15">{{movieObj.actors}}</p>
+                        <p class="mar-0 uppercase light-grey ls-2p5 ">Written by </p>
+                        <p class="mar-0 ">{{movieObj.writer}}</p>
+                    </div>
+                    <div class="poster-container center w-22">
+                        <img src="{{movieObj.poster}}">
+                    </div>
 
 
-
-
-                <span class="film-basics">Starring    </span>
-                <span class="film-people">{{movieObj.actors}}</span><br/>
-                <span class="film-basics">Written by  </span> <span class="film-people">{{movieObj.writer}}</span>
-                <span class="film-basics">Directed by </span> <span
-                    class="film-people">{{movieObj.director}}</span><br/>
-                <p class="film-description">{{movieObj.plot}}</p>
-                <p class="">{{movieObj.tomatoReview}}</p>
-                <a href="http://www.imdb.com/title/{{movieObj.imdbAddress}}" target="_blank"><p class="">IMDB</p></a>
-                <p class="">{{movieObj.imdbRating}}</p>
-                <a href="{{movieObj.tomatoUrl}}" target="_blank"><p class="">Rotten Tomatoes</p></a>
-                <p class="">{{movieObj.tomatoMeter}}</p>
-                <p class="">{{movieObj.tomatoReview}}</p>
-
+                </div>
             </div>
+
         </div>
+
+
     </div>
 
-    <!--
-     <p> Or try your luck with a random genre film...</p>
-            <button ng-click="randomMovie(animated)" >Animated</button>,
-            <button ng-click="randomMovie(mindBending)" >Mind Benders</button>,
-            <button ng-click="randomMovie(comingOfAge)" >Coming of Age</button>,
-            <button ng-click="randomMovie(classics)" >classics</button>,
-    -->
-
-
-    <div class="flex-1 history">
-        <h1 class="vampiro">this is THIS IS that THAT</h1>
-        <h1 class="peddana">this is THIS IS that THAT</h1>
-        <h1 class="oswald">this is THIS IS that THAT</h1>
-
-        <h1>History</h1>
+    <div class="previous-film-nav dark-red-bg off-white">
         <div ng-repeat="movieObj in searchHistory track by $index">
-            <div ng-click="backToMovie(movieObj)">
+            <div ng-click="backToMovie(movieObj)" class="small-poster">
                 <img src="{{movieObj.poster}}">
-                {{movieObj.title}}
             </div>
         </div>
-        {{ searchHistory }}
     </div>
+
 </div>
 
+</div>
 
 </body>
 </html>

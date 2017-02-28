@@ -83,11 +83,13 @@ app.filter('replace', function(){
 
 app.controller('movieCtrl', function ($scope, $http) {
 
+    var videoDiv = document.getElementById("video").offsetWidth;
+    var videoHeight = Math.round((videoDiv / 16) * 9);
 
     $scope.movie = 'Spirited Away';
     $scope.yt = {
-        width: '500px',
-        height: '281.25px',
+        width: '100%',
+        height: videoHeight +'px',
         videoid: "ByXuk9QqQkk",
         //videoid is for spirited away
     }
@@ -104,7 +106,7 @@ app.controller('movieCtrl', function ($scope, $http) {
     };
 
 
-            if (window.innerWidth > 800) {
+/*            if (window.innerWidth > 800) {
      $scope.yt = {
      width: '100%',
      height: Math.round((((window.innerWidth) * .66) / 16) * 9),
@@ -115,8 +117,9 @@ app.controller('movieCtrl', function ($scope, $http) {
      width: '100%',
      height: Math.round(((window.innerWidth ) / 16) * 9),
      //videoid: "RS0KyTZ3Ie4",
+     //videoid: "RS0KyTZ3Ie4",
      }
-     }
+     }*/
     $scope.searchHistory = [];
     $scope.backToMovie = function (previousFilm) {
         $scope.movie = previousFilm.title;
@@ -136,6 +139,7 @@ app.controller('movieCtrl', function ($scope, $http) {
             year: '',
             genre: '',
             plot: '',
+            country: '',
             writer: '',
             director: '',
             poster: '',
@@ -161,6 +165,7 @@ app.controller('movieCtrl', function ($scope, $http) {
             $scope.movieObj.director = response.data.Director;
             $scope.movieObj.poster = response.data.Poster;
             $scope.movieObj.plot = response.data.Plot;
+            $scope.movieObj.country = response.data.Country;
             $scope.movieObj.imdbAddress = response.data.imdbID;
             $scope.movieObj.imdbRating = response.data.imdbRating;
             $scope.movieObj.tomatoUrl = response.data.tomatoURL;

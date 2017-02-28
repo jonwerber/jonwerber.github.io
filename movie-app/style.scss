@@ -8,7 +8,15 @@ body, html{
 /*#######################################      
 START COLOR BLOCK
 #######################################*/
-$burgundy : #1D0000;
+
+.black{
+  color: black;
+}
+.black-bg{
+  background-color: black;
+}
+
+$burgundy : #0E0000big  ;
 .burgundy{
   color: $burgundy;
 }
@@ -180,8 +188,7 @@ START BUILDING BLOCKS
   align-content: center;
 }
 .poster-container{
-  position: relative;
-  z-index: 2;
+  overflow:hidden;
   img {
     max-width: 100%;
   }

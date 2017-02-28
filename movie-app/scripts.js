@@ -105,21 +105,6 @@ app.controller('movieCtrl', function ($scope, $http) {
         $scope.getMovieInfo();
     };
 
-
-/*            if (window.innerWidth > 800) {
-     $scope.yt = {
-     width: '100%',
-     height: Math.round((((window.innerWidth) * .66) / 16) * 9),
-     //videoid: "RS0KyTZ3Ie4",
-     };
-     } else {
-     $scope.yt = {
-     width: '100%',
-     height: Math.round(((window.innerWidth ) / 16) * 9),
-     //videoid: "RS0KyTZ3Ie4",
-     //videoid: "RS0KyTZ3Ie4",
-     }
-     }*/
     $scope.searchHistory = [];
     $scope.backToMovie = function (previousFilm) {
         $scope.movie = previousFilm.title;
@@ -129,6 +114,7 @@ app.controller('movieCtrl', function ($scope, $http) {
     $scope.getMovieInfo = function () {
         if ($scope.movieObj && $scope.movieObj.title !== '') {
             $scope.searchHistory.unshift($scope.movieObj);
+            console.log($scope.searchHistory);
         } else {
             console.log('nah');
         }

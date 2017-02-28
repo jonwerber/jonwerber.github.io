@@ -29,16 +29,16 @@
 
         <div class="content-container">
             <!-- 80% -->
-            <div class="copy-block medium-grey-bg off-white fo-1 ">
+            <div class="copy-block burgundy-bg off-white fo-1 ">
                 <div>
-                    <p class=" fs-34 mar-0 uppercase pad-10">{{movieObj.title}}</p>
-                    <p class=" fs-18 mar-0 pad-10">{{movieObj.year}}, {{movieObj.country}}, {{movieObj.genre}}</p>
+                    <p class=" fs-52 mar-0 uppercase pad-10 mar-10 ">{{movieObj.title}}</p>
+                    <p class=" fs-18 mar-0 pad-15  mar-10 dark-red-bg rounded">{{movieObj.year}}, {{movieObj.country}}, {{movieObj.genre}}</p>
                 </div>
                 <h1 class="pad-20">{{movieObj.plot}}</h1>
                 <div class="flex-row">
                     <div class="circle-container pad-20">
                         <a href="http://www.imdb.com/title/{{movieObj.imdbAddress}}" target="_blank">
-                            <div class="circle-50 light-grey-bg dark-red gold-bg">
+                            <div class="circle-50 light-grey-bg  gold-bg">
                                 <span class="">{{movieObj.imdbRating}}</span>
                             </div>
                             <span
@@ -59,7 +59,7 @@
 
             </div>
 
-            <div class="media-block medium-grey-bg off-white fo-2 " id="video">
+            <div class="media-block black-bg off-white fo-2 " id="video">
                 <youtube ng-init="getMovieInfo()" width="{{yt.width}}" height="{{yt.height}}"
                          videoid="{{yt.videoid}}" class="right pad-5">
                 </youtube>

@@ -189,6 +189,7 @@ img {
     position: relative;
     z-index: 100;
     padding: 10px;
+    text-transform: uppercase;
 }
 
 #nav.stick {
@@ -233,14 +234,14 @@ a {
 }
 
 .red-bg{
-    background-color: #962b1b;
+    background-color: rgba(150, 43, 27, .9);
 }
 .red {
     color: #962b1b;
 }
 
 .blue-bg{
-    background-color: #1e6896;
+    background-color: rgba(30, 104, 150, .9)
 }
 .blue {
     color: #1e6896;
@@ -254,7 +255,7 @@ a {
 }
 
 .green-bg{
-    background-color: #418628;
+    background-color: rgba(65, 134, 40, .9);
 }
 .green {
     color: #418628;

@@ -20,21 +20,30 @@
             <h1 class="vampiro fs-42 center mar-0">Film Search</h1>
             <form ng-submit="getMovieInfo()">
 
-                <input ng-model="movie" class="oswald uppercase fs-16 rounded pad-10">
-                <button ng-click="getMovieInfo()" class="oswald uppercase fs-16 rounded pad-10"> GO!</button>
+                <input onClick="this.setSelectionRange(0, this.value.length)" ng-model="movie"
+                       class="search-input off-white-bg dark-red ">
+                <h2 ng-click="getMovieInfo()" class="search-button medium-grey-bg off-white"> SEARCH</h2>
             </form>
             <p ng-if="result == false">Sorry, can't find it!</p>
-
+            <div class="mar-top-50">
+                <h2 class="film-button dark-red-bg " ng-click="randomMovie(animated)">Animated</h2>
+                <h2 class="film-button dark-red-bg" ng-click="randomMovie(mindBending)">Mind Bending</h2>
+                <h2 class="film-button dark-red-bg" ng-click="randomMovie(comingOfAge)">Coming of Age</h2>
+                <h2 class="film-button dark-red-bg" ng-click="randomMovie(Classics)">Classics</h2>
+                <h2 class="film-button dark-red-bg" ng-click="randomMovie(oscars2017)">Oscars 2017</h2>
+            </div>
         </div>
 
         <div class="content-container">
             <!-- 80% -->
             <div class="copy-block burgundy-bg off-white fo-1 ">
                 <div>
-                    <p class=" fs-52 mar-0 uppercase pad-10 mar-10 ">{{movieObj.title}}</p>
-                    <p class=" fs-18 mar-0 pad-15  mar-10 dark-red-bg rounded">{{movieObj.year}}, {{movieObj.country}}, {{movieObj.genre}}</p>
+                    <p class=" fs-46 mar-0 uppercase pad-10 mar-10 lh-46">{{movieObj.title}}</p>
+                    <p class=" fs-18 mar-0 pad-15  mar-10 dark-red-bg rounded white-shadow">{{movieObj.year}},
+                        {{movieObj.country}}, {{movieObj.genre}}</p>
                 </div>
-                <h1 class="pad-20">{{movieObj.plot}}</h1>
+                <!-- TODO : USE TEXT SIZE SNIPPET FROM NEWS -->
+                <p class="pad-5 peddana fs-24">{{movieObj.plot}}</p>
                 <div class="flex-row">
                     <div class="circle-container pad-20">
                         <a href="http://www.imdb.com/title/{{movieObj.imdbAddress}}" target="_blank">
@@ -93,8 +102,8 @@
 
     <div class="previous-film-nav dark-red-bg off-white">
         <div ng-repeat="movieObj in searchHistory track by $index">
-            <div ng-click="backToMovie(movieObj)" class="small-poster">
-                <img src="{{movieObj.poster}}">
+            <div ng-click="backToMovie(movieObj)" class="small-poster white-shadow ">
+                <img class="" src="{{movieObj.poster}}">
             </div>
         </div>
     </div>

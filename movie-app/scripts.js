@@ -99,6 +99,7 @@ app.controller('movieCtrl', function ($scope, $http) {
     $scope.mindBending = ["Eternal Sunshine of the Spotless Mind", "Clockwork Orange", "Inception", "Fight Club", "Black Swan", "Moon"];
     $scope.comingOfAge = ["Harold and Maude", "Mean Girls", "American Pie", "Stand By Me", "The Breakfast Club", "Almost Famous", "Frances Ha"];
     $scope.classics = ["Casablanca", "A Farewell To Arms", "Do the right thing", "The Graduate", "Bonnie and Clyde", "Pulp Fiction", "Who\'s Afraid of Virginia Woolf", "The Wizard of Oz", "Annie Hall"];
+    $scope.oscars2017 = ["Moonlight", "La La Land", "Fences", "Hacksaw Ridge", "Arrival", "Suicide Squad"];
     $scope.randomMovie = function (genre) {
         $scope.item = genre[Math.floor(Math.random() * genre.length)];
         $scope.movie = $scope.item;

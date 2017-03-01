@@ -71,10 +71,26 @@ $gold : #a29337;
   background-color: $gold;
 }
 
-
-
 /*#######################################      
 END COLOR BLOCK
+#######################################*/
+
+/*#######################################
+START FONT BLOCK
+#######################################*/
+
+.vampiro {
+  font-family: 'Vampiro One', cursive;
+}
+.peddana {
+  font-family: 'Peddana', serif;
+}
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+/*#######################################
+END FONT BLOCK
 #######################################*/
 
 
@@ -202,6 +218,7 @@ START BUILDING BLOCKS
   border-bottom: 10px solid $burgundy;
   display: flex;
   flex-direction: row;
+  overflow: scroll;
   @media screen and (max-width: 900px){
     border: none;
     width: 100%;
@@ -214,29 +231,6 @@ START BUILDING BLOCKS
 /*#######################################      
 END BUILDING BLOCKS
 #######################################*/
-
-
-
-
-
-/*#######################################      
-START FONT BLOCK
-#######################################*/
-
-.vampiro {
-  font-family: 'Vampiro One', cursive;
-}
-.peddana {
-  font-family: 'Peddana', serif;
-}
-.oswald {
-  font-family: 'Oswald', sans-serif;
-}
-
-/*#######################################      
-END FONT BLOCK
-#######################################*/
-
 
 
 /*#######################################      
@@ -296,6 +290,7 @@ START TEXT HELPERS
 .ls-25{letter-spacing : 25px; }
 .ls-30{letter-spacing : 30px; }
 
+.lh-46{line-height: 46px}
 /*#######################################      
 END END TEXT HELPERS
 #######################################*/
@@ -349,7 +344,10 @@ START HELPER CLASS BLOCK
 .mar-55{margin : 55px; }
 .mar-60{margin : 60px; }
 
+.mar-top-50{margin-top: 50px;}
+
 .small-poster{
+  cursor: pointer;
   img {
     margin: 5px;
     max-height: 160px;
@@ -405,7 +403,62 @@ width: 33.33%
   text-align: center;
 }
 
+.search-input{
+  width: 90%;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 39px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  cursor: pointer;
+}
 
+.search-button{
+  width: 90%;
+  height: 30px;
+  font-size: 28px;
+  border-radius: 39px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  cursor: pointer;
+  line-height: 30px;
+}
+.search-button:hover{
+  background-color: $burgundy;
+}
+
+
+.film-button {
+  width: 90%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 25px;
+  border-radius: 39px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 15px auto;
+  cursor: pointer;
+  @media screen and (max-width: 1100px){
+    display: none;
+  }
+
+}
+.film-button:hover{
+  background-color: $burgundy;
+}
+
+
+
+.white-shadow {
+  -webkit-box-shadow: 6px 6px 20px -2px rgba(255,255,255,.3);
+  -moz-box-shadow: 6px 6px 20px -2px rgba(255,255,255,.3);
+  box-shadow: 6px 6px 20px -2px rgba(255,255,255,.3);
+}
 
 /*#######################################      
      END HELPER CLASS BLOCK

@@ -30,7 +30,7 @@ a {
 h1 {
   font-family: 'Crete Round', serif;
   font-size: 42px;
-  color: #4b0f1b; }
+  color: #fff; }
 
 /*#nav {
     position: fixed;
@@ -152,7 +152,7 @@ img {
   align-items: center;
   justify-content: center; }
   #nav a {
-    color: #4b0f1b; }
+    color: #fff; }
   @media screen and (max-width: 900px) {
     #nav {
       font-size: 20px; } }

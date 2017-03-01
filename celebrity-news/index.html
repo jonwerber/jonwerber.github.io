@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Poppins:300|Shrikhand" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <title>News Dribble</title>
 </head>
@@ -14,36 +15,39 @@
 <header>
 
     <img src="logo.png" alt="">
+
 </header>
 
 
-    <!-- START CONTAINER -->
+<!-- START CONTAINER -->
 <div class="container ">
     <!-- START CONTAINER -->
-
 
 
     <!-- START LEFT SIDE COL -->
     <div class="left-side">
 
-        <div ng-init="getEntertainmentWeekly()">
-            <div ng-repeat="article in entertainmentWeekly">
+        <div ng-init="getEntertainmentWeekly()" class="article-container">
+            <div ng-repeat="article in entertainmentWeekly" class="poppins margin-10">
+                <a target="_blank" href="{{article.url}}"
                 <img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
-                <a href="{{article.url}}" class="side-margin">{{article.title}}</a>
+                <span class=" blue-link">{{article.title}}</span></a>
 
             </div>
         </div>
-
-        <div ng-init="getReddit()">
-            <h2 ng-repeat="article in reddit" class="pad-25">
-                <a href="{{article.url}}" class="side-margin">{{article.title}}</a>
+        <img src="./graphics/drible-sidebar.jpg" class="sidebar-img">
+        <div ng-init="getReddit()" class="article-container margin-15">
+            <a target="_blank" href="{{article.url}}">
+                <h2 ng-repeat="article in reddit" class="text-shadow underline">
+                    <span class="pink-link poppins">{{article.title}}</span></a>
             </h2>
         </div>
 
-        <div ng-init="getMtvNewsUk()">
+        <div ng-init="getMtvNewsUk()" class="article-container center">
             <div ng-repeat="article in mtvNewsUk">
-                <img src="{{article.urlToImage}}" alt="{{article.title}}">
-                <a href="{{article.url}}" class="side-margin">{{article.title}}</a>
+                <a target="_blank" href="{{article.url}}">
+                    <img src="{{article.urlToImage}}" alt="{{article.title}}">
+                    <span class="poppins blue-link">{{article.title}}</span></a>
             </div>
         </div>
 
@@ -56,25 +60,26 @@
 
         <div ng-init="getMtvNews()">
             <div ng-repeat="article in mtvNews">
-                <img src="{{article.urlToImage}}" alt="{{article.title}}">
+                <a target="_blank" href="{{article.url}}">
+                    <img src="{{article.urlToImage}}" alt="{{article.title}}">
 
-                <p>{{article.title}}. {{article.description}}</p>
-                <a href="{{article.url}}">{{article.author}}</a>, @ MTV NEWS
+                    <span class=" pad-25 center poppins grey">{{article.title}}. {{article.description}} </span>
+                    <p class="fs-18 shrikhand blue pad-25">
+                        {{article.author}}, @ MTV NEWS</p></a>
 
 
             </div>
         </div>
 
- <!--       <div ng-init="getHuffPo()">
-            <div ng-repeat="article in huffPo">
-                <img  src="{{article.urlToImage}}" alt="{{article.title}}">
+        <!--       <div ng-init="getHuffPo()">
+                   <div ng-repeat="article in huffPo">
+                       <img  src="{{article.urlToImage}}" alt="{{article.title}}">
 
-                <p>{{article.description}}</p>
-                <a href="{{article.url}}">{{article.author}}</a>, @ HUFFPO
+                       <p>{{article.description}}</p>
+                       <a target="_blank" href="{{article.url}}">{{article.author}}</a>, @ HUFFPO
 
-            </div>
-        </div>-->
-
+                   </div>
+               </div>-->
 
 
     </div>
@@ -82,29 +87,32 @@
 
 
     <!-- START RIGHT SIDE COL -->
-    <div class="right-side">
+    <div class="right-side grey-link ">
         <div ng-init="getDailyMail()">
-            <div ng-repeat="article in dailyMail">
-                <img  src="{{article.urlToImage}}" alt="{{article.title}}">
-                <a href="{{article.url}}">{{article.title}}</a>
+            <div ng-repeat="article in dailyMail" class="margin-10">
+                <a target="_blank" href="{{article.url}}">
+                    <img src="{{article.urlToImage}}" alt="{{article.title}}">
+                    {{article.title}}</a>
             </div>
         </div>
 
 
-
         <div ng-init="getMirror()">
-            <div ng-repeat="article in mirror">
-                <img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
-                <a href="{{article.url}}">{{article.title}}</a>
+            <div ng-repeat="article in mirror" class="margin-10">
+                <a target="_blank" href="{{article.url}}">
+                    <img ng-if="$index %2 == 0" src="{{article.urlToImage}}" alt="{{article.title}}">
+                    <p class="grey-link"> {{article.title}}</p>
+                </a>
             </div>
         </div>
 
         <div ng-init="getHuffPo()">
-            <div ng-repeat="article in huffPo">
-                <img  src="{{article.urlToImage}}" alt="{{article.title}}">
+            <div ng-repeat="article in huffPo" class="margin-10">
+                <a target="_blank" href="{{article.url}}">
+                    <img src="{{article.urlToImage}}" alt="{{article.title}}">
 
-                <p>{{article.description}}</p>
-                <a href="{{article.url}}">{{article.author}}</a>, @ HUFFPO
+                    <p class="grey-link">{{article.description}}</p>
+                    {{article.author}}</a>, @ HUFFPO
 
             </div>
         </div>
@@ -113,10 +121,9 @@
     <!-- END RIGHT SIDE COL -->
 
 
-
     <!-- END CONTAINER -->
 </div>
-    <!-- END CONTAINER -->
+<!-- END CONTAINER -->
 
 
 <footer>footers</footer>

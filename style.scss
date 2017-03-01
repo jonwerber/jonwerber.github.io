@@ -1,0 +1,266 @@
+body{
+   width: 100%;
+    padding:0px;
+    margin:0px;
+    font-family: 'Dosis', sans-serif;
+    background-color: #4b0f1b;
+}
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px;
+}
+#home {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    color: #fff;
+
+}
+
+h1{
+    font-family: 'Crete Round', serif;
+    font-size: 42px;
+    color: #4b0f1b;
+
+}
+/*#nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.50);
+}
+#nav a {
+    text-decoration: none;
+}*/
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    position: relative;
+}
+
+.flex-item {
+    margin: auto;
+    text-align: center;
+    z-index: 200;
+    position: relative;
+a {
+    color: #fff;
+}
+    img {
+        max-width: 100%;
+    }
+}
+
+img {
+    margin-top: 5px;
+}
+.videoContainer
+{
+    top: 0;
+    left: 0;
+    position:fixed;
+    min-width: 100%;
+    height:100%;
+    overflow: hidden;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.videoContainer video
+{
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-filter: blur(25px);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.static-body-box {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+    border: 2px solid #fff;
+}
+
+
+
+
+.signature {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* start nav block */
+#nav-container{
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-container{
+    -webkit-transition: all .75s, -webkit-transform .75s;
+    transition: all .75s, transform .75s;
+}
+
+
+#home-btn {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .desktop-nav-item{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #mobile-links{
+       text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+@media screen and (min-width: 900px) {
+    #mobile-nav{
+        display: none;
+    }
+    #mobile-links{
+        display: none;
+    }
+}
+
+
+
+#nav {
+    font-size: 30px;
+    position: relative;
+    z-index: 300;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+    color: #4b0f1b ;
+
+}
+}
+
+#nav-header{
+    position: relative;
+    z-index: 100;
+    padding: 10px;
+}
+
+#nav.stick {
+    position:fixed;
+    font-size: 16px;
+    top:0;
+    width: 100%;
+    background-color: #4b0f1b;
+    color: #fcfcfc;
+    height: 50px;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .75s, -webkit-transform .75s;
+    transition: all .75s, transform .75s;
+    a {
+    color: #fff;
+}
+}
+a {
+    -webkit-transition: all .75s, -webkit-transform .75s;
+    transition: all .75s, transform .75s;
+}
+@media screen and (max-width: 1000px){
+
+    #nav{
+
+    }
+}
+/* end nav block */
+
+
+/* start helper class block */
+.display-none{
+    display: none;
+}
+.display{
+    display: block !important;
+}
+
+.red-bg{
+    background-color: #962b1b;
+}
+.red {
+    color: #962b1b;
+}
+
+.blue-bg{
+    background-color: #1e6896;
+}
+.blue {
+    color: #1e6896;
+}
+
+.yellow-bg{
+    background-color: #969522;
+}
+.yellow {
+    color: #969522;
+}
+
+.green-bg{
+    background-color: #418628;
+}
+.green {
+    color: #418628;
+}
+
+.white{
+    color: #f6f1f5
+}
+
+/* end helper class block */
+

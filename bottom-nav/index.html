@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-flex-container">
+    <!--at full width: 80% / 20% column flex view,  -->
+    <div class="main-content-container">
+        <!--top part container, block view on desktop, flex row -->
+        <div class="nav-bar dark-grey-bg off-white">
+            <!-- 20% -->nav-bar
+           <h1>Some Header</h1>
+            <p>Some Text</p>
+        </div>
+
+        <div class="content-container">
+            <!-- 80% -->
+            <div class="copy-block medium-grey-bg off-white">
+                copy-block
+                <!--40% -->
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            </div>
+
+            <div class="media-block medium-grey-bg off-white">
+                media-block
+                <!--60% -->
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="previous-film-nav dark-red-bg off-white">
+        previous-film-nav
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+
+</div>
+
+</div>
+<script>
+
+    for (var i = 0; i < 72; i+= 2){
+        console.log('.fs-'+i+'{font-size : '+i+'px; }');
+    }
+
+</script>
+
+</body>
+</html>

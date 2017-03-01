@@ -153,6 +153,9 @@ img {
   justify-content: center; }
   #nav a {
     color: #4b0f1b; }
+  @media screen and (max-width: 900px) {
+    #nav {
+      font-size: 20px; } }
 
 #nav-header {
   position: relative;
@@ -217,6 +220,9 @@ a {
 .white {
   color: #f6f1f5; }
 
+@media screen and (max-width: 450px) {
+  img {
+    max-width: 95%; } }
 /* end helper class block */
 
 /*# sourceMappingURL=style.css.map */

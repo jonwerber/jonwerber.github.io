@@ -179,8 +179,10 @@ img {
     justify-content: center;
     a {
     color: #4b0f1b ;
-
 }
+    @media screen and (max-width: 900px){
+        font-size: 20px;
+    }
 }
 
 #nav-header{
@@ -261,6 +263,12 @@ a {
 .white{
     color: #f6f1f5
 }
+@media screen and (max-width: 450px){
+    img {
+max-width: 95%;
+    }
+}
+
 
 /* end helper class block */
 

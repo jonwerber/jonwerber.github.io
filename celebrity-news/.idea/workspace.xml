@@ -176,7 +176,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -252,12 +252,12 @@
       <workItem from="1487187156853" duration="4323000" />
       <workItem from="1487193339118" duration="12295000" />
       <workItem from="1487700728869" duration="1781000" />
-      <workItem from="1488388772769" duration="577000" />
+      <workItem from="1488388772769" duration="1164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49023000" />
+    <option name="totallyTimeSpent" value="49610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />

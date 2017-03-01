@@ -72,7 +72,9 @@ h1{
 .flex-item {
     margin: auto;
     text-align: center;
-    z-index: 1;
+    z-index: 200;
+    position: relative;
+
 }
 
 img {
@@ -119,7 +121,7 @@ img {
 /* start nav block */
 #nav-container{
     position: fixed;
-    z-index: 6;
+    z-index: 2;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -131,13 +133,7 @@ img {
     -webkit-transition: all .75s, -webkit-transform .75s;
     transition: all .75s, transform .75s;
 }
-#nav {
-    z-index: 10;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 #home-btn {
     display: none;
@@ -169,7 +165,16 @@ img {
 
 
 
-
+#nav {
+    font-size: 30px;
+    color: #4b0f1b !important;
+    position: relative;
+    z-index: 300;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #nav-header{
     position: relative;
@@ -179,6 +184,7 @@ img {
 
 #nav.stick {
     position:fixed;
+    font-size: 16px;
     top:0;
     width: 100%;
     background-color: #4b0f1b;

@@ -430,6 +430,9 @@ width: 33.33%
 .search-button:hover{
   background-color: $burgundy;
 }
+input[type=text]:focus {
+  box-shadow: 0 0 3pt 2pt $burgundy;
+}
 
 
 .film-button {

@@ -1,0 +1,140 @@
+body {
+  font-family: monospace;
+  background: linear-gradient(3330deg, #ed3eff, #3ecaff);
+background-size: 400% 400%;
+
+-webkit-animation: VaporGradient 5s ease infinite;
+-moz-animation: VaporGradient 5s ease infinite;
+animation: VaporGradient 5s ease infinite;
+}
+div {
+  position: relative;
+  z-index: 2;
+}
+.search-bar{
+  margin: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+.search-bar input {
+  width: 75%;
+}
+
+.video-item img {
+  max-width: 64px;
+}
+
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  font-family: monospace;
+}
+.video-title{
+  font-size: 36px;
+  line-height: 32px;
+  color: #fff;
+}
+.list-group li{
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+.list-group-item {
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: right;
+  border: none;
+  color: #fff;
+}
+.media-heading {
+  background-color: rgba(177, 49, 252, 0.50);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.media-heading:hover {
+  background-color: rgba(57, 228, 243, 0.90);
+}
+
+.list-group-item:hover {
+  background-color: rgba(57, 228, 243, 0.50);
+  color: #fff;
+}
+
+div {
+    transition: all 0.1s ease-in-out;
+}
+
+iframe {
+  transition: all 0.2s ease-in-out;
+}
+
+input {
+  padding: 10px;
+  border: 10px solid rgba(177, 49, 252, 0.90);
+  background-color: transparent;
+  font-family: monospace;
+  color: #fff;
+  text-align: center;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+@-webkit-keyframes VaporGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes VaporGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes VaporGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.statue {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  animation: StatueHueRotate 20s linear infinite;
+}
+
+
+@-webkit-keyframes StatueHueRotate {
+  from {
+    -webkit-filter: hue-rotate(0deg)
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg)
+  }
+}
+
+@keyframes StatueHueRotate {
+  from {
+    filter: hue-rotate(0deg)
+  }
+  to {
+    filter: hue-rotate(360deg)
+  }
+}

@@ -121,12 +121,13 @@
 	        value: function videoSearch(term) {
 	            var _this2 = this;
 
+	            // data var could be anything, 
 	            (0, _youtubeApiSearch2.default)({ key: API_KEY, term: term }, function (videos) {
 	                _this2.setState({
 	                    videos: videos,
 	                    selectedVideo: videos[0]
 	                });
-
+	                //if you name what is being called and the variable being used the same thing you don't have to use Varname : NewValue
 	            });
 	        }
 	    }, {
@@ -144,6 +145,7 @@
 	                _react2.default.createElement(_search_bar2.default, { onSearchTermChange: videoSearch }),
 	                _react2.default.createElement(_video_detail2.default, { video: this.state.selectedVideo }),
 	                _react2.default.createElement(_video_list2.default
+	                //selectedVideo is using the abbreviated es6 ie. the var and value are the same name
 	                , { onVideoSelect: function onVideoSelect(selectedVideo) {
 	                        return _this3.setState({ selectedVideo: selectedVideo });
 	                    },
@@ -33268,7 +33270,7 @@
 
 	  return _react2.default.createElement(
 	    'ul',
-	    { className: 'col-md-5 list-group' },
+	    { className: 'col col-lg-5 list-group' },
 	    videoItems
 	  );
 	};
@@ -33354,7 +33356,7 @@
 	  var url = "https://www.youtube.com/embed/" + videoId;
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "video-detail col-md-7" },
+	    { className: "video-detail col col-lg-7" },
 	    _react2.default.createElement(
 	      "div",
 	      { className: "embed-responsive embed-responsive-16by9" },

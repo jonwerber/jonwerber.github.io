@@ -35,6 +35,7 @@
 
     menuLink.onclick = function (e) {
         toggleAll(e);
+
     };
 
     content.onclick = function(e) {

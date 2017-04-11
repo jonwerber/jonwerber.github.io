@@ -1,5 +1,6 @@
 body {
     font-family: 'Lora', serif;
+    overflow-x: hidden;
 }
 
 .pure-img-responsive {

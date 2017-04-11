@@ -3,7 +3,9 @@
     var layout   = document.getElementById('layout'),
         menu     = document.getElementById('menu'),
         menuLink = document.getElementById('menuLink'),
-        content  = document.getElementById('main');
+        content  = document.getElementById('main'),
+        homeLink  = document.getElementById('home-link'),
+        link     = document.getElementsByClassName('pure-menu-link');
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
@@ -43,5 +45,25 @@
             toggleAll(e);
         }
     };
+
+    homeLink.onclick = function(e) {
+        location.hash ='#';
+        if (menu.className.indexOf('active') !== -1) {
+            toggleAll(e);
+        }
+    };
+
+    var linkClick = function(e) {
+        location.hash = e.srcElement.hash;
+        if (menu.className.indexOf('active') !== -1) {
+            toggleAll(e);
+        }
+        return true;
+    };
+
+    for (var i = 0; i < link.length; i++) {
+        link[i].addEventListener('click', linkClick, false);
+    };
+
 
 }(this, this.document));

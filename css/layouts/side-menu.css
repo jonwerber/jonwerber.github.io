@@ -24,9 +24,7 @@ Add transition to containers so they can push in and out.
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
-#menu{
-    border: 10px solid #ffd226;
-}
+
 /*
 This is the parent `<div>` that contains the menu and the content area.
 */

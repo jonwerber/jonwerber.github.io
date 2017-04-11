@@ -12,6 +12,10 @@ body {
 /*
 Add transition to containers so they can push in and out.
 */
+
+#main {
+    border: 10px solid #ffd226;
+}
 #layout,
 #menu,
 .menu-link {
@@ -70,7 +74,9 @@ The content `<div>` is where all your content goes.
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #888;
+    color: #ffd226;
+    font-family: 'Overpass Mono', monospace;
+
 }
 
 
@@ -96,7 +102,7 @@ appears on the left side of the page.
     All anchors inside the menu should be styled like this.
     */
     #menu a {
-        color: #9c8e33;
+        color: #ffd226;
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
     }
@@ -122,7 +128,8 @@ appears on the left side of the page.
         */
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
-            background: #f7f7f7;
+            background: #ffd226;
+            color: #fff;
         }
 
     /*
@@ -132,6 +139,7 @@ appears on the left side of the page.
     #menu .pure-menu-heading {
         background: #ffd226;
         text-transform: none;
+        font-family: 'Overpass Mono', monospace;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -139,6 +147,9 @@ appears on the left side of the page.
         #menu .pure-menu-selected a {
             color: #fff;
         }
+    .pure-menu-item{
+        font-family: 'Overpass Mono', monospace;
+    }
 
     /*
     This styles the menu heading.
@@ -170,7 +181,7 @@ small screens.
     z-index: 10;
     width: 2em;
     height: auto;
-    padding: 1.8em .6em;
+    padding: 2.3em 1.6em;
 }
 
     .menu-link:hover,
@@ -249,6 +260,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 .center{
     text-align: center;
+    color: #ffd226;
+    font-family: 'Overpass Mono', monospace;
+
 }
 img {
     padding: 1em 0;
@@ -258,9 +272,11 @@ a {
     text-decoration: none;
 }
 a:hover{
-    color: #9c8e33;
+    color: #ffd226;
+    text-decoration: solid;
+    cursor: pointer;
 }
 hr{
-    border-top: 1px dashed #9c8e33;
-
+    border-top: 10px solid #ffd226;
 }
+

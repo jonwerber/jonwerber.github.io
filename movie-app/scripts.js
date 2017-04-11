@@ -115,7 +115,6 @@ app.controller('movieCtrl', function ($scope, $http) {
     $scope.getMovieInfo = function () {
         if ($scope.movieObj && $scope.movieObj.title !== '') {
             $scope.searchHistory.unshift($scope.movieObj);
-            console.log($scope.searchHistory);
         } else {
             console.log('nah');
         }
@@ -142,7 +141,6 @@ app.controller('movieCtrl', function ($scope, $http) {
             method: 'GET',
             url: 'https://www.omdbapi.com/?t=' + formattedMovie + '&y=&plot=long&tomatoes=true&r=json'
         }).then(function successCallback(response) {
-            console.log(response.data);
             $scope.title = response.data.Title;
             $scope.movieObj.title = response.data.Title;
             $scope.movieObj.actors = response.data.Actors;
@@ -169,9 +167,8 @@ app.controller('movieCtrl', function ($scope, $http) {
             url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=' + formattedMovie + 'official+trailer' + '&key=AIzaSyAkVZUCQphe9UlFeSxMcnPVrcmf6Z691Qk'
         }).then(function successCallback(response) {
             $scope.yt.videoid = response.data.items["0"].id.videoId;
-          //  console.log('youtube;');
         }, function errorCallback(response) {
-           // console.log("ERROR + " + response)
+          console.log("ERROR + " + response)
         });
     }
 

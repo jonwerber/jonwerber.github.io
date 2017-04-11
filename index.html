@@ -1,125 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jonathan Werber</title>
-  <link href="stylesheet.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jonathan Werber Portfolio Page">
+    <title>Jonathan Werber</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Crete+Round|Dosis:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
 </head>
 <body>
-<div id="nav-container">
-  <h1 id="nav-header">Jonathan Werber</h1>
 
 
-</div>
-<div id="nav">
-  <a class="desktop-nav-item" href="#news-troff">newsTroff</a>
-  <a class="desktop-nav-item" href="#news-dribble">News Dribble</a>
-  <a class="desktop-nav-item" href="#jb-gf">James Baldwin x Google Fonts</a>
-  <a class="desktop-nav-item" href="#movie-search">Movie Search</a>
-  <!--        <a class="desktop-nav-item" href="#paced">Paced</a>
-          <a class="desktop-nav-item" href="#keyboard-app">Scaleboard</a>-->
-  <div id="mobile-nav">
-    <a href="#home" id="home-btn">/\</a>
-  </div>
-  <div id="mobile-links">
-    <a class="mobile-nav-item" href="#news-troff">newsTroff</a>
-    <a class="mobile-nav-item" href="#news-dribble">News Dribble</a>
-    <a class="mobile-nav-item" href="#jb-gf">James Baldwin x Google Fonts</a>
-    <a class="mobile-nav-item" href="#paced">Paced</a>
-    <a class="mobile-nav-item" href="#keyboard-app">Scaleboard</a>
-  </div>
-</div>
-<div class="videoContainer">
-
-
-  <video autoplay loop>
-
-    <source src="bg.webm" type="video/webm">
-    <source src="bg.mp4" type="video/mp4">
-    <source src="bg.ogv" type="video/ogg">
-    Your browser doesn't support HTML5 video tag.
-  </video>
-</div>
-<div id="home">
-
-  <div class="flex-item">
-    <!--        <a href="#news-troff">newsTroff</a>
-            <a href="#news-dribble">News Dribble</a>
-            <a href="#jb-gf">James Baldwin x Google Fonts</a>
-            <a href="#paced">Paced</a>
-            <a href="#keyboard-app">Scaleboard</a>-->
-  </div>
-</div>
-
-<div class="flex-container red-bg white" id="news-troff">
-  <div class="flex-item">
-    <a href="/news">
-      <img src="newstroff.jpg">
-      <h1>newsTroff</h1>
-      <h2>A Retro styled tech news feed. Built with Angular</h2>
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
     </a>
-  </div>
-</div>
 
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">Projects</a>
 
-<div class="flex-container blue-bg white" id="jb-gf">
-  <div class="flex-item">
-    <a href="/baldwin-gf">
-      <img src="baldwin.gif">
-      <h1>James Baldwin x Google Fonts</h1>
-      <h2>An exploration of typography set against James Baldwin Quotes. HTML/CSS</h2>
-    </a>
-  </div>
-</div>
-
-<div class="flex-container yellow-bg white" id="news-dribble">
-  <div class="flex-item">
-    <a href="/celebrity-news">
-      <img src="newsdribble.jpg">
-      <h1>News Dribble</h1>
-      <h2>A "Holy Grail" style news site, using NewsApi.org for content. Built with Angular</h2>
-    </a>
-  </div>
-</div>
-<!--<div class="flex-container green-bg" id="keyboard-app">
-    <div class="flex-item">
-        <h1>Scaleboard</h1>
-        <h2>A keyboard with only the keys in a particular scale.</h2>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#newstroff" class="pure-menu-link">newsTroff</a></li>
+                <li class="pure-menu-item"><a href="#baldwin" class="pure-menu-link">Baldwn x GFonts</a>
+                </li>
+                <li class="pure-menu-item"><a href="#vapor" class="pure-menu-link">ｖａｐｏｒｔｕｂｅ</a></li>
+                <li class="pure-menu-item"><a href="#movie" class="pure-menu-link">Movie Search</a></li>
+                <li class="pure-menu-item"><a href="#newsdribble" class="pure-menu-link">News Dribble</a></li>
+            </ul>
+        </div>
     </div>
-</div>-->
 
-<!--<div class="flex-container yellow-bg" id="paced">
-    <div class="flex-item">
-        <h1>Paced</h1>
-        <h2>A native Android Running App for runners who go off path</h2>
+    <div id="main">
+        <div class="header">
+            <img  class="pure-img-responsive"  src="images/signature1.png" alt="">
+        </div>
+
+        <div class="content">
+            <div id="newstroff">
+                <a href="/news">
+                    <h3 class="center"><img  class="pure-img-responsive"  src="images/newstroff.jpg" alt="newsTroff"></h3>
+                    <h2 class="content-subhead">newsTroff</h2>
+                    <p>
+                        A Retro styled tech news feed. Built with Angular
+                    </p>
+                </a>            <hr/>
+
+            </div>
+
+            <div id="baldwin">
+                <a href="/baldwin-gf">
+                    <h3 class="center"><img  class="pure-img-responsive"  src="images/baldwin.gif" alt="james baldwin x google fonts"></h3>
+                    <h2 class="content-subhead">James Baldwin x Google Fonts</h2>
+                    <p>
+                        An exploration of typography set against James Baldwin Quotes. HTML/CSS
+                    </p>
+                </a>            <hr/>
+
+            </div>
+
+            <div id="vapor">
+                <a href="/vaporwave">
+                    <h3 class="center"><img  class="pure-img-responsive"  src="images/vaportube.gif" alt="vaportube"></h3>
+                    <h2 class="content-subhead">ｖａｐｏｒｔｕｂｅ</h2>
+                    <p>
+                        A ReactJS Vaporwave YouTube Client
+                    </p>
+                </a>            <hr/>
+
+            </div>
+
+            <div id="movie">
+                <a href="/movie-app">
+                    <h3 class="center"><img  class="pure-img-responsive"  src="images/movie.gif" alt="movie search"></h3>
+                    <h2 class="content-subhead">Movie Search</h2>
+                    <p>
+                        A Movie Search SPA built with Angular
+                    </p>
+                </a>            <hr/>
+
+            </div>
+
+            <div id="newsdribble">
+                <a href="/celebrity-news">
+                    <h3 class="center"><img  class="pure-img-responsive"  src="images/newsdribble.jpg" alt="movie search"></h3>
+                    <h2 class="content-subhead">News Dribble</h2>
+                    <p>
+                        A "Holy Grail" style news site, using NewsApi.org for content. Built with Angular
+                    </p>
+                </a>            <hr/>
+
+            </div>
+
+
+        </div>
     </div>
-</div>-->
+</div>
 
-<div class="flex-container" id="movie-search">
-  <div class="flex-item">
-    <a href="/movie-app">
-      <img src="movie.gif">
-      <h1>Movie Search</h1>
-      <h2>A Movie Search SPA built with Angular.</h2>
-    </a>
-  </div>
-</div>
-<!--
-<div id="nav">
-<div class="flex-item">
-    <a href="#home">home</a>
-    <a href="#cinelist">cinelist</a>
-    <a href="#weather-art">weatherart</a>
-    <a href="#resume">resume</a>
-</div>
-</div>
--->
-<div class="signature">
-  <img src="signature.png"><br/>
-</div>
+
+<script src="js/ui.js"></script>
+
 </body>
-<script type="text/javascript" src="scripts.js"></script>
 </html>

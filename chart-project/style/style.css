@@ -32,7 +32,10 @@ font-family: 'Miniver', sans-serif;
 font-family: 'Poller One', sans-serif;*/
 .chart-list {
 }
-
+.loading-zone{
+    font-family: 'Averia Libre', sans-serif;
+    color: rgba(255, 255, 255, 0.95);
+}
 .rank {
     font-family: 'Averia Libre', sans-serif;
     font-size: 30px;

@@ -26936,8 +26936,8 @@
 	        value: function renderDetails() {
 	            if (this.props.location.pathname = '/' && !this.props.params.id) {
 	                return _react2.default.createElement(
-	                    'div',
-	                    null,
+	                    'h1',
+	                    { className: 'loading-zone' },
 	                    'Pick a song'
 	                );
 	            }
@@ -26975,97 +26975,97 @@
 	                    { className: 'loading-container' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'loading' },
+	                        { className: 'loading-zone' },
 	                        'hold-up-wait-a-minute-let-me-put-my-back-in-to-it'
 	                    )
 	                );

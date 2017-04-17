@@ -27131,8 +27131,8 @@
 	var FETCH_YT = exports.FETCH_YT = 'FETCH_YT';
 
 	//LAST FM
-	var LAST_FM_CHART = 'http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&format=json&api_key=915d38db8edb3c1d15fd8e76f918c092';
-	var LAST_FM_ARTIST_INFO = 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&format=json&api_key=915d38db8edb3c1d15fd8e76f918c092&artist=';
+	var LAST_FM_CHART = 'https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&format=json&api_key=915d38db8edb3c1d15fd8e76f918c092';
+	var LAST_FM_ARTIST_INFO = 'https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&format=json&api_key=915d38db8edb3c1d15fd8e76f918c092&artist=';
 	//YT
 	var YT_URL = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&key=AIzaSyAkVZUCQphe9UlFeSxMcnPVrcmf6Z691Qk&q=';
 

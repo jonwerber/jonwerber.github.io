@@ -13,13 +13,23 @@
 <body ng-app="scale-synth" ng-controller="mainCtrl">
 
 <div id="nav">
-    sdadasd
+    sdadasd{{why}}
+    <span ng-click="newScale('G',2)">G2</span>
+    <span ng-click="newScale('D',3)">D3</span>
+    <span ng-click="newScale('C',2)">C2</span>
+    <span class="key" ng-repeat="key in keyButtons" id="{{key}}">
+        <i ng-click="newScale(key,2)">{{key}}</i>
+    </span>
+
+
     </div>
 
 
 <div id="content">
 
-    <button class="key" ng-repeat="note in scale" id="{{note}}"></button>
+    <button class="key" ng-repeat="note in scale" id="{{note}}">
+        {{note}}
+    </button>
 
 </div>
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DESIGN X TECH : Wallpaper Overlay Preview</title>
+</head>
+<style>
+    body, html {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        position: fixed;
+    }
+
+    .pattern {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        z-index: 0;
+
+    }
+
+    #image {
+        width: 100%;
+    }
+
+    #fixed {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 10000;
+        background-color: #801300;
+        color: white;
+    }
+    #preview{
+        background-size: 250px;
+        background-repeat: repeat;
+    }
+</style>
+<body>
+
+<div id="fixed">
+    <input type='file' id="uploadBannerImage" onchange="readURL(this);" />
+</div>
+<div id="image">
+    <img src="./53_rb_young_boy_playroom_generic_all.png" alt="" style="z-index: 2;">
+    <img src="./overlay.png" alt="" style="mix-blend-mode: multiply; z-index: 3;">
+    <img src="./noise.png" alt="" style="mix-blend-mode: multiply; z-index: 4;">
+    <img src="./shadowshighlights.png" alt="" style="mix-blend-mode: multiply;">
+    <img src="./shadowshighlights.png" alt="" style="mix-blend-mode: multiply;">
+</div>
+<!--
+<div class="pattern" style="background-image: url('Space_Planets.png')"></div>
+<div class="pattern" style="background-image: url('Flower_of_Life_Outline.png')"></div>
+<div class="pattern" style="background-image: url('rightgraphic.PNG')"></div>
+<div class="pattern" style="background-image: url('eye_balls.png')"></div>
+<div class="pattern" style="background-image: url('Banana_Leaf.png')"></div>
+<div class="pattern" style="background-image: url('flatdots.png')"></div>
+<div class="pattern" style="background-image: url('Brick_Wall_22.png')"></div>
+<div class="pattern" style="background-color: black"></div>
+<div class="pattern" style="background-color: #898989"></div>
+<div class="pattern" style="background-color: white"></div>
+-->
+<div id="preview" class="pattern" style="background-color: white"></div>
+
+
+</body>
+</html>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                console.log(e.srcElement.result);
+                $('#preview').css('background-image', 'url(' + e.srcElement.result + ')');
+
+                $(input).next('.joint-img').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $(".joint").change(function(){
+        readURL(this);
+    });
+
+</script>
